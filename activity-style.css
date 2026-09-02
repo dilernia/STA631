@@ -1,0 +1,24 @@
+/* STA 631 shared activity styles */
+/* Numbered callout-tip boxes: gives each .callout-tip a running superscript number */
+
+/* 1. Initialize a counter for our callouts */
+body {
+  counter-reset: tip-counter;
+}
+
+/* 2. Tell the counter to increment for each tip callout */
+.callout-tip {
+  counter-increment: tip-counter;
+}
+
+/* 3. Hide the default title text (i.e., "Tip") by collapsing its font size */
+.callout-tip .callout-title-container {
+  font-size: 0;
+}
+
+/* 4. Add the custom superscript counter */
+.callout-tip .callout-title-container::before {
+  content: "" counter(tip-counter);
+  position: relative;
+  font-size: initial;
+}
