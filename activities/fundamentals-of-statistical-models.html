@@ -5439,6 +5439,31 @@ window.Quarto = {
 };
 </script>
 
+<style type="text/css">/* STA 631 shared activity styles */
+/* Numbered callout-tip boxes: gives each .callout-tip a running superscript number */
+
+/* 1. Initialize a counter for our callouts */
+body {
+  counter-reset: tip-counter;
+}
+
+/* 2. Tell the counter to increment for each tip callout */
+.callout-tip {
+  counter-increment: tip-counter;
+}
+
+/* 3. Hide the default title text (i.e., "Tip") by collapsing its font size */
+.callout-tip .callout-title-container {
+  font-size: 0;
+}
+
+/* 4. Add the custom superscript counter */
+.callout-tip .callout-title-container::before {
+  content: "" counter(tip-counter);
+  position: relative;
+  font-size: initial;
+}
+</style>
 </head>
 
 <body class="quarto-light">
@@ -5495,26 +5520,6 @@ window.Quarto = {
 </header>
 
 
-<div class="cell">
-<style type="text/css">
-
-body {
-counter-reset: tip-counter;
-}
-
-.callout-tip {
-counter-increment: tip-counter;
-}
-
-.callout-tip .callout-title-container {
-font-size: 0;
-}
-
-.callout-tip .callout-title-container::before {
-content: "" counter(tip-counter);
-position: relative; font-size: initial; }
-</style>
-</div>
 <section id="learning-objectives" class="level1">
 <h1>Learning Objectives</h1>
 <ul>
@@ -5628,20 +5633,20 @@ Table 1: Data on Marvel’s Avengers actors
 </figcaption>
 <div aria-describedby="tbl-avengers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="fsrywjavqq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fsrywjavqq table {
+<div id="lkxvhkssvw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lkxvhkssvw table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#fsrywjavqq thead, #fsrywjavqq tbody, #fsrywjavqq tfoot, #fsrywjavqq tr, #fsrywjavqq td, #fsrywjavqq th {
+#lkxvhkssvw thead, #lkxvhkssvw tbody, #lkxvhkssvw tfoot, #lkxvhkssvw tr, #lkxvhkssvw td, #lkxvhkssvw th {
 border-style: none;
 }
-#fsrywjavqq p {
+#lkxvhkssvw p {
 margin: 0;
 padding: 0;
 }
-#fsrywjavqq .gt_table {
+#lkxvhkssvw .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -5666,11 +5671,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#fsrywjavqq .gt_caption {
+#lkxvhkssvw .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#fsrywjavqq .gt_title {
+#lkxvhkssvw .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -5681,7 +5686,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#fsrywjavqq .gt_subtitle {
+#lkxvhkssvw .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -5692,7 +5697,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#fsrywjavqq .gt_heading {
+#lkxvhkssvw .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -5703,12 +5708,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#fsrywjavqq .gt_bottom_border {
+#lkxvhkssvw .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#fsrywjavqq .gt_col_headings {
+#lkxvhkssvw .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -5722,7 +5727,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#fsrywjavqq .gt_col_heading {
+#lkxvhkssvw .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -5741,7 +5746,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#fsrywjavqq .gt_column_spanner_outer {
+#lkxvhkssvw .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -5752,13 +5757,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#fsrywjavqq .gt_column_spanner_outer:first-child {
+#lkxvhkssvw .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#fsrywjavqq .gt_column_spanner_outer:last-child {
+#lkxvhkssvw .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#fsrywjavqq .gt_column_spanner {
+#lkxvhkssvw .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -5769,10 +5774,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#fsrywjavqq .gt_spanner_row {
+#lkxvhkssvw .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#fsrywjavqq .gt_group_heading {
+#lkxvhkssvw .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5797,7 +5802,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#fsrywjavqq .gt_empty_group_heading {
+#lkxvhkssvw .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -5811,13 +5816,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#fsrywjavqq .gt_from_md > :first-child {
+#lkxvhkssvw .gt_from_md > :first-child {
 margin-top: 0;
 }
-#fsrywjavqq .gt_from_md > :last-child {
+#lkxvhkssvw .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#fsrywjavqq .gt_row {
+#lkxvhkssvw .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5835,7 +5840,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#fsrywjavqq .gt_stub {
+#lkxvhkssvw .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -5847,7 +5852,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#fsrywjavqq .gt_stub_row_group {
+#lkxvhkssvw .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -5860,13 +5865,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#fsrywjavqq .gt_row_group_first td {
+#lkxvhkssvw .gt_row_group_first td {
 border-top-width: 2px;
 }
-#fsrywjavqq .gt_row_group_first th {
+#lkxvhkssvw .gt_row_group_first th {
 border-top-width: 2px;
 }
-#fsrywjavqq .gt_summary_row {
+#lkxvhkssvw .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -5875,14 +5880,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#fsrywjavqq .gt_first_summary_row {
+#lkxvhkssvw .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#fsrywjavqq .gt_first_summary_row.thick {
+#lkxvhkssvw .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#fsrywjavqq .gt_last_summary_row {
+#lkxvhkssvw .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5891,7 +5896,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#fsrywjavqq .gt_grand_summary_row {
+#lkxvhkssvw .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -5900,7 +5905,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#fsrywjavqq .gt_first_grand_summary_row {
+#lkxvhkssvw .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5909,7 +5914,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#fsrywjavqq .gt_last_grand_summary_row_top {
+#lkxvhkssvw .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -5918,10 +5923,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#fsrywjavqq .gt_striped {
+#lkxvhkssvw .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#fsrywjavqq .gt_table_body {
+#lkxvhkssvw .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -5929,7 +5934,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#fsrywjavqq .gt_footnotes {
+#lkxvhkssvw .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -5942,7 +5947,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#fsrywjavqq .gt_footnote {
+#lkxvhkssvw .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -5950,7 +5955,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#fsrywjavqq .gt_sourcenotes {
+#lkxvhkssvw .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -5963,64 +5968,64 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#fsrywjavqq .gt_sourcenote {
+#lkxvhkssvw .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#fsrywjavqq .gt_left {
+#lkxvhkssvw .gt_left {
 text-align: left;
 }
-#fsrywjavqq .gt_center {
+#lkxvhkssvw .gt_center {
 text-align: center;
 }
-#fsrywjavqq .gt_right {
+#lkxvhkssvw .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#fsrywjavqq .gt_font_normal {
+#lkxvhkssvw .gt_font_normal {
 font-weight: normal;
 }
-#fsrywjavqq .gt_font_bold {
+#lkxvhkssvw .gt_font_bold {
 font-weight: bold;
 }
-#fsrywjavqq .gt_font_italic {
+#lkxvhkssvw .gt_font_italic {
 font-style: italic;
 }
-#fsrywjavqq .gt_super {
+#lkxvhkssvw .gt_super {
 font-size: 65%;
 }
-#fsrywjavqq .gt_footnote_marks {
+#lkxvhkssvw .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#fsrywjavqq .gt_asterisk {
+#lkxvhkssvw .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#fsrywjavqq .gt_indent_1 {
+#lkxvhkssvw .gt_indent_1 {
 text-indent: 5px;
 }
-#fsrywjavqq .gt_indent_2 {
+#lkxvhkssvw .gt_indent_2 {
 text-indent: 10px;
 }
-#fsrywjavqq .gt_indent_3 {
+#lkxvhkssvw .gt_indent_3 {
 text-indent: 15px;
 }
-#fsrywjavqq .gt_indent_4 {
+#lkxvhkssvw .gt_indent_4 {
 text-indent: 20px;
 }
-#fsrywjavqq .gt_indent_5 {
+#lkxvhkssvw .gt_indent_5 {
 text-indent: 25px;
 }
-#fsrywjavqq .katex-display {
+#lkxvhkssvw .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#fsrywjavqq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#lkxvhkssvw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
@@ -6766,282 +6771,257 @@ Tip
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: flatly</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    self-contained: true</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    embed-resources: true</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="an">callout-appearance:</span><span class="co"> default</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">  output: true</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="in">```{css}</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="op">:</span> <span class="kw">false</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    css: https://raw.githubusercontent.com/dilernia/STA631/main/activity-style.css</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    self-contained: true</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    embed-resources: true</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">callout-appearance:</span><span class="co"> default</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">  output: true</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu"># Learning Objectives</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Understand key concepts and terminology in statistical modeling</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">/* 1. Initialize a counter for our callouts */</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>body <span class="op">{</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  counter<span class="op">-</span>reset<span class="op">:</span> tip<span class="op">-</span>counter<span class="op">;</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">/* 2. Tell the counter to increment for each tip callout */</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="fu">callout</span><span class="op">-</span>tip <span class="op">{</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  counter<span class="op">-</span>increment<span class="op">:</span> tip<span class="op">-</span>counter<span class="op">;</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identify observational units and variables in statistical modeling scenarios</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Classify variables by type (numeric vs. categorical) and subtype (continuous, discrete, ordinal, nominal, binary)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Distinguish between response and explanatory (predictor) variables in statistical modeling</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Distinguish between modeling for prediction and modeling for inference</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Recognize the systematic and random components of a statistical model</span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="co">/* 3. Hide the default title text (i.e., &quot;Tip&quot;) by collapsing its font size */</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="fu">callout</span><span class="op">-</span>tip <span class="op">.</span><span class="fu">callout</span><span class="op">-</span>title<span class="op">-</span>container <span class="op">{</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  font<span class="op">-</span>size<span class="op">:</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="co">/* 4. Add the custom superscript counter */</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="fu">callout</span><span class="op">-</span>tip <span class="op">.</span><span class="fu">callout</span><span class="op">-</span>title<span class="op">-</span>container<span class="op">::</span>before <span class="op">{</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  content<span class="op">:</span> <span class="st">&quot;&quot;</span> <span class="fu">counter</span><span class="op">(</span>tip<span class="op">-</span>counter<span class="op">);</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>  position<span class="op">:</span> relative<span class="op">;</span> </span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>  font<span class="op">-</span>size<span class="op">:</span> initial<span class="op">;</span> </span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu"># Learning Objectives</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Understand key concepts and terminology in statistical modeling</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identify observational units and variables in statistical modeling scenarios</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Classify variables by type (numeric vs. categorical) and subtype (continuous, discrete, ordinal, nominal, binary)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Understand why the distinction between observational studies and experiments affects whether a model&#39;s results can be interpreted causally</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu"># Statistical Modeling</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Broadly defined, **statistical modeling** is the process of using mathematical and probabilistic frameworks to describe relationships between variables, draw inferences about an underlying population, or predict outcomes of interest. When using statistical models, it is important to be cognizant of the context in which the data was collected, and the potential impacts of one&#39;s findings.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>::: {layout-ncol=2}</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;text-align: center;&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="al">![George Box](https://github.com/dilernia/STA631/blob/main/images/george-box.jpg?raw=true)</span>{width=180px style=&quot;border-radius: 8px;&quot;}</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *&quot;Essentially, all models are wrong, but some are useful.&quot;*</span>  </span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; — **George Box**</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;text-align: center;&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="al">![Kathy Pham](https://github.com/dilernia/STA631/blob/main/images/kathy-pham.jpg?raw=true)</span>{width=180px style=&quot;border-radius: 8px;&quot;}</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
 <span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Distinguish between response and explanatory (predictor) variables in statistical modeling</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Distinguish between modeling for prediction and modeling for inference</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Recognize the systematic and random components of a statistical model</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Understand why the distinction between observational studies and experiments affects whether a model&#39;s results can be interpreted causally</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu"># Statistical Modeling</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Broadly defined, **statistical modeling** is the process of using mathematical and probabilistic frameworks to describe relationships between variables, draw inferences about an underlying population, or predict outcomes of interest. When using statistical models, it is important to be cognizant of the context in which the data was collected, and the potential impacts of one&#39;s findings.</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>::: {layout-ncol=2}</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;text-align: center;&quot;</span><span class="dt">&gt;</span></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="al">![George Box](https://github.com/dilernia/STA631/blob/main/images/george-box.jpg?raw=true)</span>{width=180px style=&quot;border-radius: 8px;&quot;}</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *&quot;Essentially, all models are wrong, but some are useful.&quot;*</span>  </span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; — **George Box**</span></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;text-align: center;&quot;</span><span class="dt">&gt;</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="al">![Kathy Pham](https://github.com/dilernia/STA631/blob/main/images/kathy-pham.jpg?raw=true)</span>{width=180px style=&quot;border-radius: 8px;&quot;}</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *&quot;Today&#39;s computer scientists write code with the potential to affect billions of people&#39;s privacy, security, equality, and well-being.&quot;*</span>  </span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; — **Kathy Pham**</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="at">:::</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>While statistical models are frequently used for **prediction** (estimating unknown or future outcomes), they are also important for **inference** (understanding how explanatory variables relate to a response variable, testing hypotheses, and quantifying uncertainty).</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## Examples of Statistical Modeling</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>Statistical modeling is applied across a wide variety of domains for both predictive and inferential goals. Common examples include:</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Housing Market:** Modeling the selling value of a house based on characteristics such as size, number of bedrooms, and age 🏠 (e.g., to predict property values or quantify the price impact of an additional bedroom).</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Economics:** Modeling the national unemployment rate based on historical economic data 📈 (e.g., to forecast future rates or evaluate macroeconomic relationships).</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Email Classification:** Modeling whether an email is spam or not based on features such as the number of consecutive capital letters 💻 (e.g., to automatically classify incoming messages).</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prediction vs. Inference</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>Recall the three statistical modeling examples above. In each, we can identify a response, $Y$, and one or more explanatory variables, $X$:</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Housing Market:** $Y$ is a house&#39;s selling value; $X$ includes characteristics like size, number of bedrooms, and age.</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Economics:** $Y$ is the national unemployment rate; $X$ includes historical economic data such as past unemployment rates.</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Email Classification:** $Y$ is whether an email is spam or not; $X$ includes features like the number of consecutive capital letters.</span>
 <span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *&quot;Today&#39;s computer scientists write code with the potential to affect billions of people&#39;s privacy, security, equality, and well-being.&quot;*</span>  </span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; — **Kathy Pham**</span></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="at">:::</span></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>While statistical models are frequently used for **prediction** (estimating unknown or future outcomes), they are also important for **inference** (understanding how explanatory variables relate to a response variable, testing hypotheses, and quantifying uncertainty).</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="fu">## Examples of Statistical Modeling</span></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>Statistical modeling is applied across a wide variety of domains for both predictive and inferential goals. Common examples include:</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Housing Market:** Modeling the selling value of a house based on characteristics such as size, number of bedrooms, and age 🏠 (e.g., to predict property values or quantify the price impact of an additional bedroom).</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Economics:** Modeling the national unemployment rate based on historical economic data 📈 (e.g., to forecast future rates or evaluate macroeconomic relationships).</span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Email Classification:** Modeling whether an email is spam or not based on features such as the number of consecutive capital letters 💻 (e.g., to automatically classify incoming messages).</span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prediction vs. Inference</span></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>Recall the three statistical modeling examples above. In each, we can identify a response, $Y$, and one or more explanatory variables, $X$:</span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Housing Market:** $Y$ is a house&#39;s selling value; $X$ includes characteristics like size, number of bedrooms, and age.</span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Economics:** $Y$ is the national unemployment rate; $X$ includes historical economic data such as past unemployment rates.</span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Email Classification:** $Y$ is whether an email is spam or not; $X$ includes features like the number of consecutive capital letters.</span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>Suppose we observe a response variable $Y$ and a set of explanatory variables $X_1, X_2, \ldots, X_p$ (written together as $X$). We generally assume there is some relationship between them of the form</span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Y = f(X) + \varepsilon,</span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>$$ {#eq-model}</span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>where $f$ is some fixed but unknown function describing the systematic relationship between $X$ and $Y$, and $\varepsilon$ is a random **error term** with mean zero that is independent of $X$. </span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>Statistical modeling is, succinctly summarized, a set of approaches for estimating $f$. The motivation for estimating $f$ often guides which methods are most appropriate.</span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Prediction:** When our inputs $X$ are readily available but the output $Y$ is not, we can predict $Y$ using $\hat{Y} = \hat{f}(X)$. In this setting $\hat{f}$ can be treated as a &quot;black box&quot; - it is important that predictions are accurate, not necessarily that $\hat{f}$ is easy to explain. Predicting a house&#39;s selling price from a large number of its characteristics is an example of prediction.</span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Inference:** When our goal is to understand *how* the response is related to the explanatory variables, $\hat{f}$ cannot be treated as a black box, since we need to know its exact form. Inference questions include: Which explanatory variables are associated with the response? Is the relationship positive or negative? For example, how much would an additional bedroom change a house&#39;s selling price?</span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>Some analyses fall squarely into one category, while others involve a combination of the two. More flexible, complex models can offer better predictive accuracy but are often harder to interpret, while simpler models (like linear models) are easier to interpret but may sacrifice predictive accuracy. That is, there is often a trade-off between **prediction accuracy**, how close the estimated $\hat{f}$ is to the true $f$, and **model interpretability**, how easy it is to explain $\hat{f}$.</span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>For each of the three statistical modeling scenarios described above, what are the primary goals of the statistical models? Are these examples of prediction, inference, or a combination of both?</span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="fu">## Systematic and Random Components of a Model</span></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>Statistical models most commonly attempt to capture two components of data:</span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>**Systematic component:** The mathematical relationship between the mean or average (expected value) of the response and the explanatory variables. This corresponds to $f(X)$ in @eq-model above.</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>Suppose we observe a response variable $Y$ and a set of explanatory variables $X_1, X_2, \ldots, X_p$ (written together as $X$). We generally assume there is some relationship between them of the form</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>Y = f(X) + \varepsilon,</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>$$ {#eq-model}</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>where $f$ is some fixed but unknown function describing the systematic relationship between $X$ and $Y$, and $\varepsilon$ is a random **error term** with mean zero that is independent of $X$. </span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Statistical modeling is, succinctly summarized, a set of approaches for estimating $f$. The motivation for estimating $f$ often guides which methods are most appropriate.</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Prediction:** When our inputs $X$ are readily available but the output $Y$ is not, we can predict $Y$ using $\hat{Y} = \hat{f}(X)$. In this setting $\hat{f}$ can be treated as a &quot;black box&quot; - it is important that predictions are accurate, not necessarily that $\hat{f}$ is easy to explain. Predicting a house&#39;s selling price from a large number of its characteristics is an example of prediction.</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Inference:** When our goal is to understand *how* the response is related to the explanatory variables, $\hat{f}$ cannot be treated as a black box, since we need to know its exact form. Inference questions include: Which explanatory variables are associated with the response? Is the relationship positive or negative? For example, how much would an additional bedroom change a house&#39;s selling price?</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>Some analyses fall squarely into one category, while others involve a combination of the two. More flexible, complex models can offer better predictive accuracy but are often harder to interpret, while simpler models (like linear models) are easier to interpret but may sacrifice predictive accuracy. That is, there is often a trade-off between **prediction accuracy**, how close the estimated $\hat{f}$ is to the true $f$, and **model interpretability**, how easy it is to explain $\hat{f}$.</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>For each of the three statistical modeling scenarios described above, what are the primary goals of the statistical models? Are these examples of prediction, inference, or a combination of both?</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="fu">## Systematic and Random Components of a Model</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>Statistical models most commonly attempt to capture two components of data:</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>**Systematic component:** The mathematical relationship between the mean or average (expected value) of the response and the explanatory variables. This corresponds to $f(X)$ in @eq-model above.</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>**Random component:** A model for the variation of individual observations around that mean. This corresponds to $\varepsilon$ in @eq-model above, and reflects the fact that even observational units with the same explanatory variable values will not have identical response values.</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>Since $\hat{f}$ will rarely equal $f$ exactly, predictions made from a fitted model contain two sources of error: **reducible error**, which can potentially be decreased by improving the estimate of $f$, and **irreducible error**, the variability from $\varepsilon$ that cannot be eliminated regardless of how well $f$ is estimated.</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="fu"># Observational Units and Variables</span></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>To build, evaluate, and interpret statistical models, there are several important terms to know.</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>**Observational unit:** The individual people, objects, or cases on which data are recorded.</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>**Variables:** The characteristics or attributes that are measured or recorded about each observational unit.</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>A **dataset** is a collection of data organized for analysis. Individual observations are commonly represented as rows, and the characteristics describing each observation are represented as columns (variables or features). The number of observational units in a dataset is called the **sample size**, commonly denoted by $n$.</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>For example, below is a table containing data on actors from the Marvel Avengers movies. Each row or observation represents a single actor, and each column represents a measured variable.</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-avengers</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: &quot;Data on Marvel&#39;s Avengers actors&quot;</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
 <span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>**Random component:** A model for the variation of individual observations around that mean. This corresponds to $\varepsilon$ in @eq-model above, and reflects the fact that even observational units with the same explanatory variable values will not have identical response values.</span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>Since $\hat{f}$ will rarely equal $f$ exactly, predictions made from a fitted model contain two sources of error: **reducible error**, which can potentially be decreased by improving the estimate of $f$, and **irreducible error**, the variability from $\varepsilon$ that cannot be eliminated regardless of how well $f$ is estimated.</span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="fu"># Observational Units and Variables</span></span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>To build, evaluate, and interpret statistical models, there are several important terms to know.</span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>**Observational unit:** The individual people, objects, or cases on which data are recorded.</span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>**Variables:** The characteristics or attributes that are measured or recorded about each observational unit.</span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>A **dataset** is a collection of data organized for analysis. Individual observations are commonly represented as rows, and the characteristics describing each observation are represented as columns (variables or features). The number of observational units in a dataset is called the **sample size**, commonly denoted by $n$.</span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>For example, below is a table containing data on actors from the Marvel Avengers movies. Each row or observation represents a single actor, and each column represents a measured variable.</span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-avengers</span></span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: &quot;Data on Marvel&#39;s Avengers actors&quot;</span></span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing data on Avengers actors</span></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>marvel_tibble <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/Data/marvel_tabular.csv&quot;</span>)</span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="co"># Displaying tabular data</span></span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>marvel_tibble <span class="sc">|&gt;</span> </span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(character_image_url, died_in_endgame, net_worth, marvel_total_screen_time)) <span class="sc">|&gt;</span> </span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>What are the observational units for each of the three statistical modeling scenarios listed above (housing market, national unemployment rate, and email classification)?</span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>What are the variables recorded in each of the three statistical modeling scenarios listed above?</span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>In @tbl-avengers, how many observational units and how many variables are displayed in the table?</span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="fu"># Variable Types</span></span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>When constructing and interpreting statistical models, it is important to correctly identify the types of variables we are working with, as different models, summary statistics, and visualizations are appropriate for specific variable types.</span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;text-align: center;&quot;</span><span class="dt">&gt;</span></span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>%%| echo: false</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>%%| fig-alt: <span class="ot">&quot;</span><span class="st">A top-down flowchart showing the hierarchy of variable types. Variable (green) branches into Numeric (yellow) and Categorical (blue). Numeric branches into Continuous and Discrete. Categorical branches into Ordinal and Nominal.</span><span class="ot">&quot;</span></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>flowchart TD</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>  A(Variable) --&gt; B(Numeric)</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>  A(Variable) --&gt; C(Categorical)</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>  B(Numeric) --&gt; D(Continuous)</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>  B(Numeric) --&gt; E(Discrete)</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>  C(Categorical) --&gt; F(Ordinal)</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>  C(Categorical) --&gt; G(Nominal)</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>  style A fill:<span class="co">#43aa8b</span></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>  style B fill:<span class="co">#f9c74f</span></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>  style C fill:<span class="co">#277da1</span></span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>  style D fill:<span class="co">#f9c74f</span></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>  style E fill:<span class="co">#f9c74f</span></span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>  style F fill:<span class="co">#277da1</span></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>  style G fill:<span class="co">#277da1</span></span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing data on Avengers actors</span></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>marvel_tibble <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/Data/marvel_tabular.csv&quot;</span>)</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="co"># Displaying tabular data</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>marvel_tibble <span class="sc">|&gt;</span> </span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(character_image_url, died_in_endgame, net_worth, marvel_total_screen_time)) <span class="sc">|&gt;</span> </span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>What are the observational units for each of the three statistical modeling scenarios listed above (housing market, national unemployment rate, and email classification)?</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>What are the variables recorded in each of the three statistical modeling scenarios listed above?</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>In @tbl-avengers, how many observational units and how many variables are displayed in the table?</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="fu"># Variable Types</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>When constructing and interpreting statistical models, it is important to correctly identify the types of variables we are working with, as different models, summary statistics, and visualizations are appropriate for specific variable types.</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;text-align: center;&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>%%| echo: false</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>%%| fig-alt: <span class="ot">&quot;</span><span class="st">A top-down flowchart showing the hierarchy of variable types. Variable (green) branches into Numeric (yellow) and Categorical (blue). Numeric branches into Continuous and Discrete. Categorical branches into Ordinal and Nominal.</span><span class="ot">&quot;</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>flowchart TD</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>  A(Variable) --&gt; B(Numeric)</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>  A(Variable) --&gt; C(Categorical)</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>  B(Numeric) --&gt; D(Continuous)</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>  B(Numeric) --&gt; E(Discrete)</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>  C(Categorical) --&gt; F(Ordinal)</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>  C(Categorical) --&gt; G(Nominal)</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>  style A fill:<span class="co">#43aa8b</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>  style B fill:<span class="co">#f9c74f</span></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>  style C fill:<span class="co">#277da1</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>  style D fill:<span class="co">#f9c74f</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>  style E fill:<span class="co">#f9c74f</span></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>  style F fill:<span class="co">#277da1</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>  style G fill:<span class="co">#277da1</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>Although there are more specific subtypes, variables generally fall into two primary categories: numeric (quantitative) and categorical.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="fu">## Numeric Data</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>**Numeric (quantitative) data** consists of measurable quantities. Arithmetic operations such as addition, subtraction, and averaging are meaningful for numeric values.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Continuous values:** Have an infinite number of possible values within a given range (e.g., height in inches 📏, weight in pounds ⚖️, age in years 👵, temperature 🌡️).</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Discrete values:** Have distinct, countable values and are commonly constrained to whole numbers or counts (e.g., number of pets 🐱, number of students in a classroom 🎓, shoe size 👟).</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="fu">## Categorical Data</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>**Categorical data** consists of values or category designations from a finite set. These can be words, symbols, or numbers that do not represent measurable quantities.</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Ordinal:** Values or categories have a natural order or ranking (e.g., genotype being AA, Aa, or aa 🧬; class standing being freshman, sophomore, junior, or senior 📚; rating of agreement from strongly disagree to strongly agree 👎👍).</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Nominal:** Values or categories have no intrinsic ordering (e.g., university attended: GVSU, MSU, or SVSU; actor nationality).</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Binary:** When a categorical variable has only two possible categories, it is said to be binary (e.g., Netflix subscriber status: yes or no 📺; got Avengers tattoo: yes or no).</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>Numeric and categorical variables go by other names as well. Numeric variables are also called **quantitative** variables, while categorical variables are also called **qualitative** variables. When a categorical variable is used as an explanatory variable in a model, it is often called a **factor**, with its categories referred to as **levels**; a quantitative explanatory variable is sometimes called a **covariate**.</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>What are the variable types and subtypes for each of the following?</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Rating of agreement with 5 levels from &quot;strongly disagree&quot; to &quot;strongly agree&quot; 👎👍</span>
 <span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>Although there are more specific subtypes, variables generally fall into two primary categories: numeric (quantitative) and categorical.</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Roller coaster intensity rated on a scale from 1 to 5 🎢</span>
 <span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="fu">## Numeric Data</span></span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>**Numeric (quantitative) data** consists of measurable quantities. Arithmetic operations such as addition, subtraction, and averaging are meaningful for numeric values.</span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Continuous values:** Have an infinite number of possible values within a given range (e.g., height in inches 📏, weight in pounds ⚖️, age in years 👵, temperature 🌡️).</span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Discrete values:** Have distinct, countable values and are commonly constrained to whole numbers or counts (e.g., number of pets 🐱, number of students in a classroom 🎓, shoe size 👟).</span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="fu">## Categorical Data</span></span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>**Categorical data** consists of values or category designations from a finite set. These can be words, symbols, or numbers that do not represent measurable quantities.</span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Ordinal:** Values or categories have a natural order or ranking (e.g., genotype being AA, Aa, or aa 🧬; class standing being freshman, sophomore, junior, or senior 📚; rating of agreement from strongly disagree to strongly agree 👎👍).</span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Nominal:** Values or categories have no intrinsic ordering (e.g., university attended: GVSU, MSU, or SVSU; actor nationality).</span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Binary:** When a categorical variable has only two possible categories, it is said to be binary (e.g., Netflix subscriber status: yes or no 📺; got Avengers tattoo: yes or no).</span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>Numeric and categorical variables go by other names as well. Numeric variables are also called **quantitative** variables, while categorical variables are also called **qualitative** variables. When a categorical variable is used as an explanatory variable in a model, it is often called a **factor**, with its categories referred to as **levels**; a quantitative explanatory variable is sometimes called a **covariate**.</span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>What are the variable types and subtypes for each of the following?</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Probability of each NFL football team winning the Super Bowl this year 🏈</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>In @tbl-avengers, what types of variables are <span class="in">`name`</span> and <span class="in">`got_avengers_tattoo`</span>?</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>In @tbl-avengers, what types of variables are <span class="in">`nationality`</span> and <span class="in">`height`</span>?</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="fu"># Variable Roles</span></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>In statistical modeling, variables serve distinct roles depending on whether they represent the outcome of interest or the features used to explain or predict that outcome.</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>**Response variable:** The variable describing the outcome of interest. Response variables are also referred to as **dependent variables**, **target variables**, or **outcome variables**, and are commonly denoted using the symbol $Y$ (or $y_i$ for the value observed for the $i$th observational unit).</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>**Explanatory variable:** The variable whose relationship with the response variable is being studied. Explanatory variables in statistical modeling are also referred to as **predictors**, **predictor variables**, **independent variables**, **features**, or **regressors**, and are commonly denoted using the symbol $X$. When multiple explanatory variables are recorded, they are distinguished with subscripts (e.g., $X_1, X_2, \ldots, X_p$).</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>Occasionally, a study is primarily concerned with the relationship between the response and *one* particular explanatory variable, even though other explanatory variables are also recorded and may influence the response. These other variables, which are adjusted for but not the primary focus of interest, are called **extraneous variables**.</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>For example, a school may implement a study exploring whether a student is accepted to a university or not based on their GPA and ACT/SAT test scores 🎓:</span>
 <span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Rating of agreement with 5 levels from &quot;strongly disagree&quot; to &quot;strongly agree&quot; 👎👍</span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Roller coaster intensity rated on a scale from 1 to 5 🎢</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>In the university admissions study described above, what are the response and explanatory variables? 🎓</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Probability of each NFL football team winning the Super Bowl this year 🏈</span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>In @tbl-avengers, what types of variables are <span class="in">`name`</span> and <span class="in">`got_avengers_tattoo`</span>?</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>In @tbl-avengers, what types of variables are <span class="in">`nationality`</span> and <span class="in">`height`</span>?</span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="fu"># Variable Roles</span></span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>In statistical modeling, variables serve distinct roles depending on whether they represent the outcome of interest or the features used to explain or predict that outcome.</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>**Response variable:** The variable describing the outcome of interest. Response variables are also referred to as **dependent variables**, **target variables**, or **outcome variables**, and are commonly denoted using the symbol $Y$ (or $y_i$ for the value observed for the $i$th observational unit).</span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>**Explanatory variable:** The variable whose relationship with the response variable is being studied. Explanatory variables in statistical modeling are also referred to as **predictors**, **predictor variables**, **independent variables**, **features**, or **regressors**, and are commonly denoted using the symbol $X$. When multiple explanatory variables are recorded, they are distinguished with subscripts (e.g., $X_1, X_2, \ldots, X_p$).</span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>Occasionally, a study is primarily concerned with the relationship between the response and *one* particular explanatory variable, even though other explanatory variables are also recorded and may influence the response. These other variables, which are adjusted for but not the primary focus of interest, are called **extraneous variables**.</span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>For example, a school may implement a study exploring whether a student is accepted to a university or not based on their GPA and ACT/SAT test scores 🎓:</span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>In the university admissions study described above, what are the response and explanatory variables? 🎓</span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>What are the response and explanatory variables when modeling the selling value of a house based on characteristics such as size, number of bedrooms, and age? 🏠</span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="fu"># Observational Studies vs. Experiments</span></span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>The conclusions we can draw from a statistical model depend heavily on *how* the data were collected, particularly whether researchers actively controlled the values of the explanatory variables.</span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>**Observational study:** Researchers measure variables of interest without intervening in or controlling the process being studied. Observational data generally only support conclusions about **associations** between variables — that is, whether two variables tend to change together — not conclusions about **causation**. </span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>**Experiment:** Researchers actively manipulate the explanatory variable(s) for each observational unit (e.g., randomly assigning subjects to a treatment or control group). A well-designed, randomized experiment facilitates exploration of *causal* (cause-and-effect) relationships between the explanatory and response variables.</span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>Since observational studies cannot rule out the influence of extraneous variables not accounted for in the model, an observed association between two variables in an observational study does not, by itself, prove that one variable affects another. However, observational studies are often starting points for investigating causal relationships since they are commonly easier and less costly to implement.</span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>Suppose a study finds that students who eat breakfast tend to have higher test scores than students who skip breakfast. If this relationship was discovered using an observational study, what can be concluded? What extraneous variables might also help explain this association?</span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>For each of the three original statistical modeling scenarios (housing market, national unemployment rate, and email classification), would the data most likely come from an observational study or an experiment? What does this imply about whether we can draw causal conclusions?</span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>What are the response and explanatory variables when modeling the selling value of a house based on characteristics such as size, number of bedrooms, and age? 🏠</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="fu"># Observational Studies vs. Experiments</span></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>The conclusions we can draw from a statistical model depend heavily on *how* the data were collected, particularly whether researchers actively controlled the values of the explanatory variables.</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>**Observational study:** Researchers measure variables of interest without intervening in or controlling the process being studied. Observational data generally only support conclusions about **associations** between variables — that is, whether two variables tend to change together — not conclusions about **causation**. </span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>**Experiment:** Researchers actively manipulate the explanatory variable(s) for each observational unit (e.g., randomly assigning subjects to a treatment or control group). A well-designed, randomized experiment facilitates exploration of *causal* (cause-and-effect) relationships between the explanatory and response variables.</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>Since observational studies cannot rule out the influence of extraneous variables not accounted for in the model, an observed association between two variables in an observational study does not, by itself, prove that one variable affects another. However, observational studies are often starting points for investigating causal relationships since they are commonly easier and less costly to implement.</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>Suppose a study finds that students who eat breakfast tend to have higher test scores than students who skip breakfast. If this relationship was discovered using an observational study, what can be concluded? What extraneous variables might also help explain this association?</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>For each of the three original statistical modeling scenarios (housing market, national unemployment rate, and email classification), would the data most likely come from an observational study or an experiment? What does this imply about whether we can draw causal conclusions?</span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>:::</span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
