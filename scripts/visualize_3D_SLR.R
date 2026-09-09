@@ -145,7 +145,7 @@ plot_regression_surface <- function(n = 50,
   z_range <- diff(range(z_matrix))
   marker_z_offset <- marker_offset_pct * z_range
   opt_z <- z_fun(ols_intercept, ols_slope)
-  marker_label <- if (surface == "sse") "OLS / MLE minimum" else "OLS / MLE maximum"
+  marker_label <- if (surface == "sse") "SSE minimum" else "Likelihood maximum"
   
   fig <- fig %>%
     add_trace(
