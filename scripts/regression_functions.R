@@ -38,28 +38,28 @@ plot_regression_surface <- function(data = NULL,
                                     intercept_pad = 10,
                                     slope_pad = 5,
                                     marker_offset_pct = 0.03,
-                                    surface = c("sse", "likelihood")) {
+                                    surface = base::c("sse", "likelihood")) {
   
-  if(is.null(data)) {
+  if(base::is.null(data)) {
     # 1. Simulate data from SLR model -------------------------------------------
-    set.seed(1994)
+    base::set.seed(1994)
     
     # True parameters
-    true_intercept_slope <- c(4, 0.6)
+    true_intercept_slope <- base::c(4, 0.6)
     n_values <- 15
     
     data <- tibble::tibble(
-      x = seq(1, 10, length.out = n_values),
+      x = base::seq(1, 10, length.out = n_values),
       y = true_intercept_slope[1] + true_intercept_slope[2] * x + stats::rnorm(n_values, mean = 0, sd = 2)
     )
   }
   
-  surface <- match.arg(surface)
+  surface <- base::match.arg(surface)
   
   # Extract variables for modeling directly from the provided dataset
   x <- data$x
   y <- data$y
-  n_obs <- length(x)
+  n_obs <- base::length(x)
   
   # 2. Fit OLS (which is also the MLE under normal errors) for reference --
   # This ensures the optimum matches the estimator values for the provided data
@@ -69,22 +69,22 @@ plot_regression_surface <- function(data = NULL,
   
   # 3. Define the SSE function and, from it, the profile log-likelihood ---
   sse <- function(b0, b1) {
-    sum((y - (b0 + b1 * x))^2)
+    base::sum((y - (b0 + b1 * x))^2)
   }
   
   loglik <- function(b0, b1) {
     s <- sse(b0, b1)
-    -n_obs / 2 * log(2 * pi) - n_obs / 2 * log(s / n_obs) - n_obs / 2
+    -n_obs / 2 * base::log(2 * base::pi) - n_obs / 2 * base::log(s / n_obs) - n_obs / 2
   }
   
   z_fun <- if (surface == "sse") sse else loglik
   
   # 4. Build a grid of (intercept, slope) values around the OLS solution --
-  intercept_seq <- seq(ols_intercept - intercept_pad, ols_intercept + intercept_pad, length.out = grid_n)
-  slope_seq     <- seq(ols_slope - slope_pad, ols_slope + slope_pad, length.out = grid_n)
+  intercept_seq <- base::seq(ols_intercept - intercept_pad, ols_intercept + intercept_pad, length.out = grid_n)
+  slope_seq     <- base::seq(ols_slope - slope_pad, ols_slope + slope_pad, length.out = grid_n)
   
-  z_grid_matrix <- outer(intercept_seq, slope_seq, Vectorize(z_fun))
-  z_matrix <- t(z_grid_matrix)
+  z_grid_matrix <- base::outer(intercept_seq, slope_seq, base::Vectorize(z_fun))
+  z_matrix <- base::t(z_grid_matrix)
   
   # 5. Build the interactive surface ---------------------------------------
   z_axis_title <- if (surface == "sse") "SSE" else "Log-Likelihood"
@@ -100,11 +100,11 @@ plot_regression_surface <- function(data = NULL,
     z = ~z_matrix,
     type = "surface",
     colorscale = "Viridis",
-    colorbar = list(title = z_axis_title),
-    contours = list(
-      z = list(show = TRUE, usecolormap = TRUE, project = list(z = TRUE))
+    colorbar = base::list(title = z_axis_title),
+    contours = base::list(
+      z = base::list(show = TRUE, usecolormap = TRUE, project = base::list(z = TRUE))
     ),
-    hovertemplate = paste0(
+    hovertemplate = base::paste0(
       "Intercept: %{x:.3f}<br>",
       "Slope: %{y:.3f}<br>",
       z_axis_title, ": %{z:.3f}<extra></extra>"
@@ -114,16 +114,16 @@ plot_regression_surface <- function(data = NULL,
   fig <- plotly::layout(
     fig,
     title = plot_title,
-    scene = list(
-      xaxis = list(title = "Intercept (\u03B2\u2080)"),
-      yaxis = list(title = "Slope (\u03B2\u2081)"),
-      zaxis = list(title = z_axis_title),
-      camera = list(eye = list(x = 1.5, y = -1.5, z = 0.8))
+    scene = base::list(
+      xaxis = base::list(title = "Intercept (\u03B2\u2080)"),
+      yaxis = base::list(title = "Slope (\u03B2\u2081)"),
+      zaxis = base::list(title = z_axis_title),
+      camera = base::list(eye = base::list(x = 1.5, y = -1.5, z = 0.8))
     )
   )
   
   # 6. Mark the optimum (the OLS / MLE solution) on the surface -----------
-  z_range <- diff(range(z_matrix))
+  z_range <- base::diff(base::range(z_matrix))
   marker_z_offset <- marker_offset_pct * z_range
   opt_z <- z_fun(ols_intercept, ols_slope)
   marker_label <- if (surface == "sse") "SSE minimum" else "Likelihood maximum"
@@ -135,13 +135,13 @@ plot_regression_surface <- function(data = NULL,
     z = opt_z + marker_z_offset,
     type = "scatter3d",
     mode = "markers",
-    marker = list(color = "orange", size = 8, symbol = "diamond"),
+    marker = base::list(color = "orange", size = 8, symbol = "diamond"),
     name = marker_label,
     showlegend = TRUE,
-    hovertemplate = paste0(
+    hovertemplate = base::paste0(
       "Intercept: %{x:.3f}<br>",
       "Slope: %{y:.3f}<br>",
-      z_axis_title, ": ", sprintf("%.3f", opt_z), "<extra>", marker_label, "</extra>"
+      z_axis_title, ": ", base::sprintf("%.3f", opt_z), "<extra>", marker_label, "</extra>"
     )
   )
   
@@ -169,16 +169,16 @@ plot_regression_surface <- function(data = NULL,
 #'
 #' @examples
 #' # Fit a model predicting MPG based on Weight and Horsepower using the mtcars dataset
-#' my_model <- lm(mpg ~ wt + hp, data = mtcars)
+#' my_model <- stats::lm(mpg ~ wt + hp, data = mtcars)
 #'
 #' # Generate the interactive Plotly 3D visualization
 #' plot_regression_plane(my_model)
 plot_regression_plane <- function(model) {
   
   # 1. Extract variable names dynamically from the model formula
-  vars <- all.vars(formula(model))
-  if (length(vars) != 3) {
-    stop("This function requires a model with exactly one response and two predictors.")
+  vars <- base::all.vars(stats::formula(model))
+  if (base::length(vars) != 3) {
+    base::stop("This function requires a model with exactly one response and two predictors.")
   }
   
   y_name  <- vars[1]
@@ -189,44 +189,45 @@ plot_regression_plane <- function(model) {
   df <- model$model
   
   # 3. Extract coefficients and construct the dynamic equation title
-  b <- coef(model)
+  b <- stats::coef(model)
+  
   # Uses %.2f for the intercept and %+.2f to force +/- signs for the slopes
-  eq_string <- sprintf("Predicted %s = %.2f %+.2f*%s %+.2f*%s", 
-                       y_name, b[1], b[2], x1_name, b[3], x2_name)
+  eq_string <- base::sprintf("Predicted %s = %.2f %+.2f*%s %+.2f*%s", 
+                             y_name, b[1], b[2], x1_name, b[3], x2_name)
   
   # 4. Create a structured grid of values for the regression plane
-  axis_x1 <- seq(min(df[[x1_name]]), max(df[[x1_name]]), length.out = 30)
-  axis_x2 <- seq(min(df[[x2_name]]), max(df[[x2_name]]), length.out = 30)
+  axis_x1 <- base::seq(base::min(df[[x1_name]]), base::max(df[[x1_name]]), length.out = 30)
+  axis_x2 <- base::seq(base::min(df[[x2_name]]), base::max(df[[x2_name]]), length.out = 30)
   
-  plane_grid <- expand.grid(x1 = axis_x1, x2 = axis_x2)
+  plane_grid <- base::expand.grid(x1 = axis_x1, x2 = axis_x2)
   # Rename columns to perfectly match what predict() expects
-  colnames(plane_grid) <- c(x1_name, x2_name)
+  base::colnames(plane_grid) <- base::c(x1_name, x2_name)
   
   # Predict values and transpose matrix to align with Plotly's X/Y mapping
-  plane_grid$y_hat <- predict(model, newdata = plane_grid)
-  plane_z <- t(matrix(plane_grid$y_hat, nrow = length(axis_x1), ncol = length(axis_x2)))
+  plane_grid$y_hat <- stats::predict(model, newdata = plane_grid)
+  plane_z <- base::t(base::matrix(plane_grid$y_hat, nrow = base::length(axis_x1), ncol = base::length(axis_x2)))
   
   # 5. Build dynamic hover templates using the extracted variable names
-  hover_scatter <- sprintf("%s: %%{x:.2f}<br>%s: %%{y:.2f}<br>%s: %%{z:.2f}<extra></extra>", 
-                           x1_name, x2_name, y_name)
-  hover_plane <- sprintf("%s: %%{x:.2f}<br>%s: %%{y:.2f}<br>Predicted %s: %%{z:.2f}<extra></extra>", 
-                         x1_name, x2_name, y_name)
+  hover_scatter <- base::sprintf("%s: %%{x:.2f}<br>%s: %%{y:.2f}<br>%s: %%{z:.2f}<extra></extra>", 
+                                 x1_name, x2_name, y_name)
+  hover_plane <- base::sprintf("%s: %%{x:.2f}<br>%s: %%{y:.2f}<br>Predicted %s: %%{z:.2f}<extra></extra>", 
+                               x1_name, x2_name, y_name)
   
   # 6. Generate the Plotly 3D Visualization
-  p <- plot_ly() %>%
+  p <- plotly::plot_ly() %>%
     
     # Add the 3D scatter points
-    add_markers(
+    plotly::add_markers(
       x = df[[x1_name]], 
       y = df[[x2_name]], 
       z = df[[y_name]], 
-      marker = list(size = 4, color = "blue", opacity = 0.6),
+      marker = base::list(size = 4, color = "blue", opacity = 0.6),
       name = "Actual Data",
       hovertemplate = hover_scatter
     ) %>%
     
     # Add the regression surface
-    add_surface(
+    plotly::add_surface(
       x = axis_x1, 
       y = axis_x2, 
       z = plane_z, 
@@ -238,18 +239,18 @@ plot_regression_plane <- function(model) {
     ) %>%
     
     # Customize layout with dynamic labels and forced cube aspect ratio
-    layout(
-      title = list(text = eq_string, font = list(size = 15)),
-      scene = list(
-        xaxis = list(title = x1_name),
-        yaxis = list(title = x2_name),
-        zaxis = list(title = y_name),
-        camera = list(eye = list(x = 1.5, y = 1.5, z = 1.2)),
+    plotly::layout(
+      title = base::list(text = eq_string, font = base::list(size = 15)),
+      scene = base::list(
+        xaxis = base::list(title = x1_name),
+        yaxis = base::list(title = x2_name),
+        zaxis = base::list(title = y_name),
+        camera = base::list(eye = base::list(x = 1.5, y = 1.5, z = 1.2)),
         aspectmode = "cube"
       )
     )
   
-  return(p)
+  base::return(p)
 }
 
 #' Plot Variance Inflation Factor (VIF) Values
@@ -277,7 +278,7 @@ plot_regression_plane <- function(model) {
 #' @examples
 #' \dontrun{
 #' # Fit a standard linear model
-#' model <- lm(mpg ~ cyl + disp + hp + wt, data = mtcars)
+#' model <- stats::lm(mpg ~ cyl + disp + hp + wt, data = mtcars)
 #' 
 #' # Generate and print the VIF plot
 #' vif_plot(model)
@@ -286,7 +287,7 @@ vif_plot <- function(modFit) {
   
   vifs <- car::vif(modFit)
   
-  if("GVIF^(1/(2*Df))" %in% colnames(vifs)) {
+  if("GVIF^(1/(2*Df))" %in% base::colnames(vifs)) {
     vifs <- vifs[, "GVIF^(1/(2*Df))"]
     ggTitle <- "Generalized variance inflation factors"
     xLab <- "GVIF"
@@ -295,21 +296,21 @@ vif_plot <- function(modFit) {
     xLab <- "VIF"
   }
   
-  preds <- names(vifs)
+  preds <- base::names(vifs)
   
-  vifGG <- tibble(Predictor = preds,
-                  VIF = vifs) %>% 
-    dplyr::mutate(Predictor = fct_reorder(Predictor, -VIF)) %>% 
-    ggplot(aes(x = VIF, y = Predictor)) + 
-    geom_segment(aes(xend = VIF, x = 0, 
-                     yend = Predictor, y = Predictor)) +
-    geom_vline(xintercept = 5, linetype = "dotted") +
-    geom_vline(xintercept = 10, linetype = "dotted") +
-    scale_x_continuous(limits = c(0, max(vifs)*1.1),
-                       expand = expansion(mult = c(0, 0.10))) +
-    geom_point(size = 3, color = "steelblue") +
-    labs(title = ggTitle, x = xLab,
-         caption = stringr::str_wrap(paste0(xLab, " values calculated via the car package: https://search.r-project.org/CRAN/refmans/car/html/vif.html")))
+  vifGG <- tibble::tibble(Predictor = preds,
+                          VIF = vifs) %>% 
+    dplyr::mutate(Predictor = forcats::fct_reorder(Predictor, -VIF)) %>% 
+    ggplot2::ggplot(ggplot2::aes(x = VIF, y = Predictor)) + 
+    ggplot2::geom_segment(ggplot2::aes(xend = VIF, x = 0, 
+                                       yend = Predictor, y = Predictor)) +
+    ggplot2::geom_vline(xintercept = 5, linetype = "dotted") +
+    ggplot2::geom_vline(xintercept = 10, linetype = "dotted") +
+    ggplot2::scale_x_continuous(limits = base::c(0, base::max(vifs)*1.1),
+                                expand = ggplot2::expansion(mult = base::c(0, 0.10))) +
+    ggplot2::geom_point(size = 3, color = "steelblue") +
+    ggplot2::labs(title = ggTitle, x = xLab,
+                  caption = stringr::str_wrap(base::paste0(xLab, " values calculated via the car package: https://search.r-project.org/CRAN/refmans/car/html/vif.html")))
   
-  return(suppressWarnings(print(vifGG)))
+  base::return(base::suppressWarnings(base::print(vifGG)))
 }
