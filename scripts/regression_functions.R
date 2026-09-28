@@ -314,3 +314,108 @@ vif_plot <- function(modFit) {
   
   base::return(base::suppressWarnings(base::print(vifGG)))
 }
+
+#' Create a 3D Contour or Surface Plot
+#'
+#' This function takes a three-column data frame, interpolates the data over a grid
+#' using the `akima` package, and generates either a static filled contour plot using
+#' `ggplot2` or an interactive 3D surface plot using `plotly`. 
+#'
+#' @details
+#' Interpolating to plot contours is based on techniques discussed at:
+#' \url{https://stackoverflow.com/questions/65873211/empty-contour-plot-in-ggplot}
+#'
+#' @param data_3d A data frame containing at least three columns representing x, y, and z coordinates.
+#'   Missing values are automatically removed.
+#' @param dupes A character string indicating how to handle duplicate coordinates.
+#'   Passed to the `duplicate` argument of \code{\link[akima]{interp}}. Defaults to \code{"mean"}.
+#' @param plot_type A character string specifying the output format. Must be either 
+#'   \code{"static"} (returns a \code{ggplot2} object) or \code{"interactive"} (returns a 
+#'   \code{plotly} object). Defaults to \code{"static"}.
+#'
+#' @return A \code{ggplot} object or a \code{plotly} widget depending on the \code{plot_type} argument.
+#'
+#' @importFrom tidyr drop_na
+#' @importFrom dplyr rename pull
+#' @importFrom akima interp
+#' @importFrom ggplot2 ggplot aes geom_contour_filled geom_point labs theme_bw theme element_text element_blank
+#' @importFrom plotly plot_ly layout colorbar
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' df <- data.frame(x = rnorm(100), y = rnorm(100), z = runif(100))
+#' 
+#' # Generate a static ggplot2 contour plot
+#' plot_3d(df, plot_type = "static")
+#' 
+#' # Generate an interactive plotly 3D surface
+#' plot_3d(df, plot_type = "interactive")
+#' }
+plot_3d <- function(data_3d, dupes = "mean", plot_type = c("static", "interactive")) {
+  
+  plot_type <- match.arg(plot_type)
+  
+  data_3d_clean <- data_3d |> tidyr::drop_na() |> 
+    dplyr::rename("x" = 1, "y" = 2, "z" = 3)
+  
+  suppressWarnings(grid <- akima::interp(dplyr::pull(data_3d_clean, 1), 
+                                         dplyr::pull(data_3d_clean, 2),
+                                         dplyr::pull(data_3d_clean, 3),
+                                         duplicate = dupes))
+  
+  my_vars <- colnames(data_3d)
+  
+  if (plot_type == "static") {
+    
+    grid_df <- data.frame(x = rep(grid$x, ncol(grid$z)), 
+                          y = rep(grid$y, each = nrow(grid$z)), 
+                          z = as.numeric(grid$z))
+    
+    p <- grid_df |>
+      ggplot2::ggplot(ggplot2::aes(x = x, y = y, z = z)) +
+      ggplot2::geom_contour_filled(ggplot2::aes(x = x, 
+                                                y = y, 
+                                                z = z)) + 
+      ggplot2::geom_point(data = data_3d_clean, colour="white",pch=21, 
+                          fill = "black", size = 1.5) +
+      ggplot2::labs(x = my_vars[1], y = my_vars[2],
+                    fill = my_vars[3],
+                    title = "Three-dimensional distribution") +
+      ggplot2::theme_bw() + 
+      ggplot2::theme(text = ggplot2::element_text(face = "bold"), 
+                     panel.grid = ggplot2::element_blank(),
+                     legend.position = "bottom")
+    
+    return(p)
+    
+  } else if (plot_type == "interactive") {
+    
+    # Construct a dynamic hover template using the original variable names
+    ht <- paste0(
+      my_vars[1], ": %{x}<br>",
+      my_vars[2], ": %{y}<br>",
+      my_vars[3], ": %{z}<extra></extra>" 
+    )
+    
+    p <- plotly::plot_ly(
+      x = ~grid$x, 
+      y = ~grid$y, 
+      z = ~grid$z, 
+      type = "surface",
+      hovertemplate = ht
+    ) |>
+      plotly::colorbar(title = my_vars[3]) |>
+      plotly::layout(
+        title = "Three-dimensional distribution",
+        scene = list(
+          xaxis = list(title = my_vars[1]),
+          yaxis = list(title = my_vars[2]),
+          zaxis = list(title = my_vars[3])
+        )
+      )
+    
+    return(p)
+  }
+}
