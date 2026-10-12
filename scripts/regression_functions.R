@@ -419,3 +419,125 @@ plot_3d <- function(data_3d, dupes = "mean", plot_type = c("static", "interactiv
     return(p)
   }
 }
+
+#' Create Empirical Logit Plots
+#'
+#' This function generates empirical logit plots for quantitative and 
+#' categorical predictors from a fitted logistic regression model. 
+#' Quantitative predictors are binned, and empirical log odds are plotted 
+#' as points. Categorical predictors are plotted as bar charts, with the 
+#' bars sorted by their height (the log odds).
+#'
+#' @param model_fit A fitted logistic regression model object (e.g., from \code{glm()}).
+#' @param n_bins An integer specifying the target number of bins for quantitative predictors. Default is 4.
+#'
+#' @return A \code{ggplot} object if there is a single predictor, or a named list of \code{ggplot} objects if there are multiple predictors.
+#' 
+#' @import tidyverse
+#' @export
+empirical_logit_plot <- function(model_fit,
+                                 n_bins = 4) {
+  
+  library(tidyverse)
+  
+  my_data <- model_fit$model
+  response <- colnames(my_data)[1]
+  
+  # Reference category for the response variable
+  ref_cat <- model_fit$data[[response]][as.logical(model_fit$y)][1]
+  
+  # Making response a dummy variable
+  my_data[[response]] <- model_fit[["y"]]
+  
+  quant_predictors <- colnames(my_data)[-c(1)][which(sapply(my_data, FUN = is.numeric)[-c(1)])]
+  cat_predictors <- colnames(my_data)[-c(1)][which(sapply(my_data, FUN = function(x){!is.numeric(x)})[-c(1)])]
+  
+  # Check for complete separation
+  if(length(unique(my_data[[response]])) == 1) {
+    stop("Complete separation in data. Cannot create empirical logit plot.")
+  }
+  
+  # Instantiating list for empirical logit plots
+  emp_plots <- list()
+  
+  # Creating empirical logit plots for quantitative predictors
+  for(predictor in quant_predictors) {
+    
+    # Create a dataframe with binned predictor values and the proportion of positive responses in each bin
+    agg_data <- my_data |>
+      dplyr::group_by(bin = ggplot2::cut_interval(.data[[predictor]], n = n_bins)) |>
+      dplyr::summarize(prop_response = mean(.data[[response]])) |>
+      dplyr::ungroup() |>
+      dplyr::mutate(log_odds = log(prop_response / (1 - prop_response)))
+    
+    nans <- any(is.infinite(agg_data$log_odds))
+    n_bins_new <- n_bins
+    
+    # Display warning if NaN values
+    if(nans) {
+      while(nans & n_bins_new >= 1) {
+        # Create a dataframe with binned predictor values and the proportion of positive responses in each bin
+        agg_data <- my_data |>
+          dplyr::group_by(bin = cut_interval(.data[[predictor]], n = n_bins_new - 1)) |>
+          dplyr::summarize(prop_response = mean(.data[[response]])) |>
+          dplyr::ungroup() |>
+          dplyr::mutate(log_odds = log(prop_response / (1 - prop_response)))
+        
+        # Check for NaN values
+        nans <- any(is.infinite(agg_data$log_odds))
+        
+        # Reduce number of bins by 1
+        n_bins_new <- n_bins_new - 1
+      }
+      warning(paste0("Complete separation for ", predictor, 
+                     " based on ",
+                     n_bins, " bins."))
+    }
+    
+    used_bins <- nrow(agg_data)
+    
+    if(n_bins > used_bins) {
+      message(paste0("Number of bins reduced to ", 
+                     used_bins, " instead of ", n_bins, " for ",
+                     predictor, "."))
+    }
+    
+    # Create the empirical logit plot
+    emp_plots[[predictor]] <- ggplot2::ggplot(agg_data, ggplot2::aes(x = bin, y = log_odds)) +
+      ggplot2::geom_point() +
+      ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0.1, 0.1))) +
+      ggplot2::labs(x = predictor,
+                    y = paste0("Log odds of ", response, " = ", ref_cat),
+                    title = "Empirical Logit Plot") +
+      ggplot2::theme_bw() +
+      ggplot2::theme(panel.grid = ggplot2::element_blank())
+  }
+  
+  # Creating empirical logit plots for categorical predictors
+  for(predictor in cat_predictors) {
+    agg_data <- my_data |>
+      dplyr::group_by(!!as.name(predictor)) |>
+      dplyr::summarize(prop_response  = mean(!!as.name(response)),
+                       log_odds = log(prop_response / (1 - prop_response)))
+    
+    if(!any(is.infinite(agg_data$log_odds))) {
+      emp_plots[[predictor]] <- agg_data |>
+        ggplot2::ggplot(ggplot2::aes(x = reorder(!!as.name(predictor), log_odds), y = log_odds)) +
+        ggplot2::geom_col() +
+        ggplot2::labs(x = predictor,
+                      y = paste0("Log odds of ", response, " = ", ref_cat),
+                      title = "Empirical Logit Plot") +
+        ggplot2::theme_bw() +
+        ggplot2::theme(panel.grid = ggplot2::element_blank())
+    } else {
+      warning(paste0("Complete separation for levels of ", predictor, 
+                     "."))
+    }
+  }
+  
+  if(length(emp_plots) > 1) {
+    return(emp_plots[colnames(my_data)[-c(1)]])
+  } else {
+    return(emp_plots[[1]])
+  }
+}
