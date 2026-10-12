@@ -1,0 +1,888 @@
+survived,sex,passenger_class,name,age,fare,n_siblings_spouses_aboard,n_parents_children_aboard
+No,Male,Third,Mr. Owen Harris Braund,22,7.25,1,0
+Yes,Female,First,Mrs. John Bradley (Florence Briggs Thayer) Cumings,38,71.2833,1,0
+Yes,Female,Third,Miss. Laina Heikkinen,26,7.925,0,0
+Yes,Female,First,Mrs. Jacques Heath (Lily May Peel) Futrelle,35,53.1,1,0
+No,Male,Third,Mr. William Henry Allen,35,8.05,0,0
+No,Male,Third,Mr. James Moran,27,8.4583,0,0
+No,Male,First,Mr. Timothy J McCarthy,54,51.8625,0,0
+No,Male,Third,Master. Gosta Leonard Palsson,2,21.075,3,1
+Yes,Female,Third,Mrs. Oscar W (Elisabeth Vilhelmina Berg) Johnson,27,11.1333,0,2
+Yes,Female,Second,Mrs. Nicholas (Adele Achem) Nasser,14,30.0708,1,0
+Yes,Female,Third,Miss. Marguerite Rut Sandstrom,4,16.7,1,1
+Yes,Female,First,Miss. Elizabeth Bonnell,58,26.55,0,0
+No,Male,Third,Mr. William Henry Saundercock,20,8.05,0,0
+No,Male,Third,Mr. Anders Johan Andersson,39,31.275,1,5
+No,Female,Third,Miss. Hulda Amanda Adolfina Vestrom,14,7.8542,0,0
+Yes,Female,Second,Mrs. (Mary D Kingcome) Hewlett,55,16,0,0
+No,Male,Third,Master. Eugene Rice,2,29.125,4,1
+Yes,Male,Second,Mr. Charles Eugene Williams,23,13,0,0
+No,Female,Third,Mrs. Julius (Emelia Maria Vandemoortele) Vander Planke,31,18,1,0
+Yes,Female,Third,Mrs. Fatima Masselmani,22,7.225,0,0
+No,Male,Second,Mr. Joseph J Fynney,35,26,0,0
+Yes,Male,Second,Mr. Lawrence Beesley,34,13,0,0
+Yes,Female,Third,Miss. Anna McGowan,15,8.0292,0,0
+Yes,Male,First,Mr. William Thompson Sloper,28,35.5,0,0
+No,Female,Third,Miss. Torborg Danira Palsson,8,21.075,3,1
+Yes,Female,Third,Mrs. Carl Oscar (Selma Augusta Emilia Johansson) Asplund,38,31.3875,1,5
+No,Male,Third,Mr. Farred Chehab Emir,26,7.225,0,0
+No,Male,First,Mr. Charles Alexander Fortune,19,263,3,2
+Yes,Female,Third,Miss. Ellen O'Dwyer,24,7.8792,0,0
+No,Male,Third,Mr. Lalio Todoroff,23,7.8958,0,0
+No,Male,First,Don. Manuel E Uruchurtu,40,27.7208,0,0
+Yes,Female,First,Mrs. William Augustus (Marie Eugenie) Spencer,48,146.5208,1,0
+Yes,Female,Third,Miss. Mary Agatha Glynn,18,7.75,0,0
+No,Male,Second,Mr. Edward H Wheadon,66,10.5,0,0
+No,Male,First,Mr. Edgar Joseph Meyer,28,82.1708,1,0
+No,Male,First,Mr. Alexander Oskar Holverson,42,52,1,0
+Yes,Male,Third,Mr. Hanna Mamee,18,7.2292,0,0
+No,Male,Third,Mr. Ernest Charles Cann,21,8.05,0,0
+No,Female,Third,Miss. Augusta Maria Vander Planke,18,18,2,0
+Yes,Female,Third,Miss. Jamila Nicola-Yarred,14,11.2417,1,0
+No,Female,Third,Mrs. Johan (Johanna Persdotter Larsson) Ahlin,40,9.475,1,0
+No,Female,Second,Mrs. William John Robert (Dorothy Ann Wonnacott) Turpin,27,21,1,0
+Yes,Female,Second,Miss. Simonne Marie Anne Andree Laroche,3,41.5792,1,2
+Yes,Female,Third,Miss. Margaret Delia Devaney,19,7.8792,0,0
+No,Male,Third,Mr. William John Rogers,30,8.05,0,0
+No,Male,Third,Mr. Denis Lennon,20,15.5,1,0
+Yes,Female,Third,Miss. Bridget O'Driscoll,27,7.75,0,0
+No,Male,Third,Mr. Youssef Samaan,16,21.6792,2,0
+No,Female,Third,Mrs. Josef (Josefine Franchi) Arnold-Franchi,18,17.8,1,0
+No,Male,Third,Master. Juha Niilo Panula,7,39.6875,4,1
+No,Male,Third,Mr. Richard Cater Nosworthy,21,7.8,0,0
+Yes,Female,First,Mrs. Henry Sleeper (Myna Haxtun) Harper,49,76.7292,1,0
+Yes,Female,Second,Mrs. Lizzie (Elizabeth Anne Wilkinson) Faunthorpe,29,26,1,0
+No,Male,First,Mr. Engelhart Cornelius Ostby,65,61.9792,0,1
+Yes,Male,First,Mr. Hugh Woolner,46,35.5,0,0
+Yes,Female,Second,Miss. Emily Rugg,21,10.5,0,0
+No,Male,Third,Mr. Mansouer Novel,28.5,7.2292,0,0
+Yes,Female,Second,Miss. Constance Mirium West,5,27.75,1,2
+No,Male,Third,Master. William Frederick Goodwin,11,46.9,5,2
+No,Male,Third,Mr. Orsen Sirayanian,22,7.2292,0,0
+Yes,Female,First,Miss. Amelie Icard,38,80,0,0
+No,Male,First,Mr. Henry Birkhardt Harris,45,83.475,1,0
+No,Male,Third,Master. Harald Skoog,4,27.9,3,2
+No,Male,First,Mr. Albert A Stewart,64,27.7208,0,0
+Yes,Male,Third,Master. Gerios Moubarek,7,15.2458,1,1
+Yes,Female,Second,Mrs. (Elizabeth Ramell) Nye,29,10.5,0,0
+No,Male,Third,Mr. Ernest James Crease,19,8.1583,0,0
+Yes,Female,Third,Miss. Erna Alexandra Andersson,17,7.925,4,2
+No,Male,Third,Mr. Vincenz Kink,26,8.6625,2,0
+No,Male,Second,Mr. Stephen Curnow Jenkin,32,10.5,0,0
+No,Female,Third,Miss. Lillian Amy Goodwin,16,46.9,5,2
+No,Male,Second,Mr. Ambrose Jr Hood,21,73.5,0,0
+No,Male,Third,Mr. Apostolos Chronopoulos,26,14.4542,1,0
+Yes,Male,Third,Mr. Lee Bing,32,56.4958,0,0
+No,Male,Third,Mr. Sigurd Hansen Moen,25,7.65,0,0
+No,Male,Third,Mr. Ivan Staneff,23,7.8958,0,0
+No,Male,Third,Mr. Rahamin Haim Moutal,28,8.05,0,0
+Yes,Male,Second,Master. Alden Gates Caldwell,0.83,29,0,2
+Yes,Female,Third,Miss. Elizabeth Dowdell,30,12.475,0,0
+No,Male,Third,Mr. Achille Waelens,22,9,0,0
+Yes,Male,Third,Mr. Jan Baptist Sheerlinck,29,9.5,0,0
+Yes,Female,Third,Miss. Brigdet Delia McDermott,31,7.7875,0,0
+No,Male,First,Mr. Francisco M Carrau,28,47.1,0,0
+Yes,Female,Second,Miss. Bertha Ilett,17,10.5,0,0
+Yes,Female,Third,Mrs. Karl Alfred (Maria Mathilda Gustafsson) Backstrom,33,15.85,3,0
+No,Male,Third,Mr. William Neal Ford,16,34.375,1,3
+No,Male,Third,Mr. Selman Francis Slocovski,20,8.05,0,0
+Yes,Female,First,Miss. Mabel Helen Fortune,23,263,3,2
+No,Male,Third,Mr. Francesco Celotti,24,8.05,0,0
+No,Male,Third,Mr. Emil Christmann,29,8.05,0,0
+No,Male,Third,Mr. Paul Edvin Andreasson,20,7.8542,0,0
+No,Male,First,Mr. Herbert Fuller Chaffee,46,61.175,1,0
+No,Male,Third,Mr. Bertram Frank Dean,26,20.575,1,2
+No,Male,Third,Mr. Daniel Coxon,59,7.25,0,0
+No,Male,Third,Mr. Charles Joseph Shorney,22,8.05,0,0
+No,Male,First,Mr. George B Goldschmidt,71,34.6542,0,0
+Yes,Male,First,Mr. William Bertram Greenfield,23,63.3583,0,1
+Yes,Female,Second,Mrs. John T (Ada Julia Bone) Doling,34,23,0,1
+No,Male,Second,Mr. Sinai Kantor,34,26,1,0
+No,Female,Third,Miss. Matilda Petranec,28,7.8958,0,0
+No,Male,Third,Mr. Pastcho Petroff,29,7.8958,0,0
+No,Male,First,Mr. Richard Frasar White,21,77.2875,0,1
+No,Male,Third,Mr. Gustaf Joel Johansson,33,8.6542,0,0
+No,Male,Third,Mr. Anders Vilhelm Gustafsson,37,7.925,2,0
+No,Male,Third,Mr. Stoytcho Mionoff,28,7.8958,0,0
+Yes,Female,Third,Miss. Anna Kristine Salkjelsvik,21,7.65,0,0
+Yes,Male,Third,Mr. Albert Johan Moss,29,7.775,0,0
+No,Male,Third,Mr. Tido Rekic,38,7.8958,0,0
+Yes,Female,Third,Miss. Bertha Moran,28,24.15,1,0
+No,Male,First,Mr. Walter Chamberlain Porter,47,52,0,0
+No,Female,Third,Miss. Hileni Zabour,14.5,14.4542,1,0
+No,Male,Third,Mr. David John Barton,22,8.05,0,0
+No,Female,Third,Miss. Katriina Jussila,20,9.825,1,0
+No,Female,Third,Miss. Malake Attalah,17,14.4583,0,0
+No,Male,Third,Mr. Edvard Pekoniemi,21,7.925,0,0
+No,Male,Third,Mr. Patrick Connors,70.5,7.75,0,0
+No,Male,Second,Mr. William John Robert Turpin,29,21,1,0
+No,Male,First,Mr. Quigg Edmond Baxter,24,247.5208,0,1
+No,Female,Third,Miss. Ellis Anna Maria Andersson,2,31.275,4,2
+No,Male,Second,Mr. Stanley George Hickman,21,73.5,2,0
+No,Male,Third,Mr. Leonard Charles Moore,19,8.05,0,0
+No,Male,Second,Mr. Nicholas Nasser,32.5,30.0708,1,0
+Yes,Female,Second,Miss. Susan Webber,32.5,13,0,0
+No,Male,First,Mr. Percival Wayland White,54,77.2875,0,1
+Yes,Male,Third,Master. Elias Nicola-Yarred,12,11.2417,1,0
+No,Male,Third,Mr. Martin McMahon,19,7.75,0,0
+Yes,Male,Third,Mr. Fridtjof Arne Madsen,24,7.1417,0,0
+Yes,Female,Third,Miss. Anna Peter,2,22.3583,1,1
+No,Male,Third,Mr. Johan Ekstrom,45,6.975,0,0
+No,Male,Third,Mr. Jozef Drazenoic,33,7.8958,0,0
+No,Male,Third,Mr. Domingos Fernandeo Coelho,20,7.05,0,0
+No,Female,Third,Mrs. Alexander A (Grace Charity Laury) Robins,47,14.5,1,0
+Yes,Female,Second,Mrs. Leopold (Mathilde Francoise Pede) Weisz,29,26,1,0
+No,Male,Second,Mr. Samuel James Hayden Sobey,25,13,0,0
+No,Male,Second,Mr. Emile Richard,23,15.0458,0,0
+Yes,Female,First,Miss. Helen Monypeny Newsom,19,26.2833,0,2
+No,Male,First,Mr. Jacques Heath Futrelle,37,53.1,1,0
+No,Male,Third,Mr. Olaf Elon Osen,16,9.2167,0,0
+No,Male,First,Mr. Victor Giglio,24,79.2,0,0
+No,Female,Third,Mrs. Joseph (Sultana) Boulos,40,15.2458,0,2
+Yes,Female,Third,Miss. Anna Sofia Nysten,22,7.75,0,0
+Yes,Female,Third,Mrs. Pekka Pietari (Elin Matilda Dolck) Hakkarainen,24,15.85,1,0
+No,Male,Third,Mr. Jeremiah Burke,19,6.75,0,0
+No,Male,Second,Mr. Edgardo Samuel Andrew,18,11.5,0,0
+No,Male,Second,Mr. Joseph Charles Nicholls,19,36.75,1,1
+Yes,Male,Third,Mr. August Edvard Andersson,27,7.7958,0,0
+No,Female,Third,Miss. Robina Maggie Ford,9,34.375,2,2
+No,Male,Second,Mr. Michel Navratil,36.5,26,0,2
+No,Male,Second,Rev. Thomas Roussel Davids Byles,42,13,0,0
+No,Male,Second,Rev. Robert James Bateman,51,12.525,0,0
+Yes,Female,First,Mrs. Thomas (Edith Wearne) Pears,22,66.6,1,0
+No,Male,Third,Mr. Alfonzo Meo,55.5,8.05,0,0
+No,Male,Third,Mr. Austin Blyler van Billiard,40.5,14.5,0,2
+No,Male,Third,Mr. Ole Martin Olsen,27,7.3125,0,0
+No,Male,First,Mr. Charles Duane Williams,51,61.3792,0,1
+Yes,Female,Third,Miss. Katherine Gilnagh,16,7.7333,0,0
+No,Male,Third,Mr. Harry Corn,30,8.05,0,0
+No,Male,Third,Mr. Mile Smiljanic,37,8.6625,0,0
+No,Male,Third,Master. Thomas Henry Sage,5,69.55,8,2
+No,Male,Third,Mr. John Hatfield Cribb,44,16.1,0,1
+Yes,Female,Second,Mrs. James (Elizabeth Inglis Milne) Watt,40,15.75,0,0
+No,Male,Third,Mr. John Viktor Bengtsson,26,7.775,0,0
+No,Male,Third,Mr. Jovo Calic,17,8.6625,0,0
+No,Male,Third,Master. Eino Viljami Panula,1,39.6875,4,1
+Yes,Male,Third,Master. Frank John William Goldsmith,9,20.525,0,2
+Yes,Female,First,Mrs. (Edith Martha Bowerman) Chibnall,48,55,0,1
+No,Female,Third,Mrs. William (Anna Bernhardina Karlsson) Skoog,45,27.9,1,4
+No,Male,First,Mr. John D Baumann,60,25.925,0,0
+No,Male,Third,Mr. Lee Ling,28,56.4958,0,0
+No,Male,First,Mr. Wyckoff Van der hoef,61,33.5,0,0
+No,Male,Third,Master. Arthur Rice,4,29.125,4,1
+Yes,Female,Third,Miss. Eleanor Ileen Johnson,1,11.1333,1,1
+No,Male,Third,Mr. Antti Wilhelm Sivola,21,7.925,0,0
+No,Male,First,Mr. James Clinch Smith,56,30.6958,0,0
+No,Male,Third,Mr. Klas Albin Klasen,18,7.8542,1,1
+No,Male,Third,Master. Henry Forbes Lefebre,5,25.4667,3,1
+No,Female,First,Miss. Ann Elizabeth Isham,50,28.7125,0,0
+No,Male,Second,Mr. Reginald Hale,30,13,0,0
+No,Male,Third,Mr. Lionel Leonard,36,0,0,0
+No,Female,Third,Miss. Constance Gladys Sage,8,69.55,8,2
+No,Male,Second,Mr. Rene Pernot,39,15.05,0,0
+No,Male,Third,Master. Clarence Gustaf Hugo Asplund,9,31.3875,4,2
+Yes,Male,Second,Master. Richard F Becker,1,39,2,1
+Yes,Female,Third,Miss. Luise Gretchen Kink-Heilmann,4,22.025,0,2
+No,Male,First,Mr. Hugh Roscoe Rood,39,50,0,0
+Yes,Female,Third,Mrs. Thomas (Johanna Godfrey) O'Brien,26,15.5,1,0
+Yes,Male,First,Mr. Charles Hallace Romaine,45,26.55,0,0
+No,Male,Third,Mr. John Bourke,40,15.5,1,1
+No,Male,Third,Mr. Stjepan Turcin,36,7.8958,0,0
+Yes,Female,Second,Mrs. (Rosa) Pinsky,32,13,0,0
+No,Male,Second,Mr. William Carbines,19,13,0,0
+Yes,Female,Third,Miss. Carla Christine Nielsine Andersen-Jensen,19,7.8542,1,0
+Yes,Male,Second,Master. Michel M Navratil,3,26,1,1
+Yes,Female,First,Mrs. James Joseph (Margaret Tobin) Brown,44,27.7208,0,0
+Yes,Female,First,Miss. Elise Lurette,58,146.5208,0,0
+No,Male,Third,Mr. Robert Mernagh,28,7.75,0,0
+No,Male,Third,Mr. Karl Siegwart Andreas Olsen,42,8.4042,0,1
+Yes,Female,Third,Miss. Margaret Madigan,21,7.75,0,0
+No,Female,Second,Miss. Henriette Yrois,24,13,0,0
+No,Male,Third,Mr. Nestor Cyriel Vande Walle,28,9.5,0,0
+No,Male,Third,Mr. Frederick Sage,17,69.55,8,2
+No,Male,Third,Mr. Jakob Alfred Johanson,34,6.4958,0,0
+No,Male,Third,Mr. Gerious Youseff,45.5,7.225,0,0
+Yes,Male,Third,Mr. Gurshon Cohen,18,8.05,0,0
+No,Female,Third,Miss. Telma Matilda Strom,2,10.4625,0,1
+No,Male,Third,Mr. Karl Alfred Backstrom,32,15.85,1,0
+Yes,Male,Third,Mr. Nassef Cassem Albimona,26,18.7875,0,0
+Yes,Female,Third,Miss. Helen Carr,16,7.75,0,0
+Yes,Male,First,Mr. Henry Blank,40,31,0,0
+No,Male,Third,Mr. Ahmed Ali,24,7.05,0,0
+Yes,Female,Second,Miss. Clear Annie Cameron,35,21,0,0
+No,Male,Third,Mr. John Henry Perkin,22,7.25,0,0
+No,Male,Second,Mr. Hans Kristensen Givard,30,13,0,0
+No,Male,Third,Mr. Philip Kiernan,22,7.75,1,0
+Yes,Female,First,Miss. Madeleine Newell,31,113.275,1,0
+Yes,Female,Third,Miss. Eliina Honkanen,27,7.925,0,0
+No,Male,Second,Mr. Sidney Samuel Jacobsohn,42,27,1,0
+Yes,Female,First,Miss. Albina Bazzani,32,76.2917,0,0
+No,Male,Second,Mr. Walter Harris,30,10.5,0,0
+Yes,Male,Third,Mr. Victor Francis Sunderland,16,8.05,0,0
+No,Male,Second,Mr. James H Bracken,27,13,0,0
+No,Male,Third,Mr. George Henry Green,51,8.05,0,0
+No,Male,Third,Mr. Christo Nenkoff,22,7.8958,0,0
+Yes,Male,First,Mr. Frederick Maxfield Hoyt,38,90,1,0
+No,Male,Third,Mr. Karl Ivar Sven Berglund,22,9.35,0,0
+Yes,Male,Second,Mr. William John Mellors,19,10.5,0,0
+No,Male,Third,Mr. John Hall Lovell,20.5,7.25,0,0
+No,Male,Second,Mr. Arne Jonas Fahlstrom,18,13,0,0
+No,Female,Third,Miss. Mathilde Lefebre,12,25.4667,3,1
+Yes,Female,First,Mrs. Henry Birkhardt (Irene Wallach) Harris,35,83.475,1,0
+No,Male,Third,Mr. Bengt Edvin Larsson,29,7.775,0,0
+No,Male,Second,Mr. Ernst Adolf Sjostedt,59,13.5,0,0
+Yes,Female,Third,Miss. Lillian Gertrud Asplund,5,31.3875,4,2
+No,Male,Second,Mr. Robert William Norman Leyson,24,10.5,0,0
+No,Female,Third,Miss. Alice Phoebe Harknett,21,7.55,0,0
+No,Male,Second,Mr. Stephen Hold,44,26,1,0
+Yes,Female,Second,Miss. Marjorie Collyer,8,26.25,0,2
+No,Male,Second,Mr. Frederick William Pengelly,19,10.5,0,0
+No,Male,Second,Mr. George Henry Hunt,33,12.275,0,0
+No,Female,Third,Miss. Thamine Zabour,19,14.4542,1,0
+Yes,Female,Third,Miss. Katherine Murphy,18,15.5,1,0
+No,Male,Second,Mr. Reginald Charles Coleridge,29,10.5,0,0
+No,Male,Third,Mr. Matti Alexanteri Maenpaa,22,7.125,0,0
+No,Male,Third,Mr. Sleiman Attalah,30,7.225,0,0
+No,Male,First,Dr. William Edward Minahan,44,90,2,0
+No,Female,Third,Miss. Agda Thorilda Viktoria Lindahl,25,7.775,0,0
+Yes,Female,Second,Mrs. William (Anna) Hamalainen,24,14.5,0,2
+Yes,Male,First,Mr. Richard Leonard Beckwith,37,52.5542,1,1
+No,Male,Second,Rev. Ernest Courtenay Carter,54,26,1,0
+No,Male,Third,Mr. James George Reed,18,7.25,0,0
+No,Female,Third,Mrs. Wilhelm (Elna Matilda Persson) Strom,29,10.4625,1,1
+No,Male,First,Mr. William Thomas Stead,62,26.55,0,0
+No,Male,Third,Mr. William Arthur Lobb,30,16.1,1,0
+No,Female,Third,Mrs. Viktor (Helena Wilhelmina) Rosblom,41,20.2125,0,2
+Yes,Female,Third,Mrs. Darwis (Hanne Youssef Razi) Touma,29,15.2458,0,2
+Yes,Female,First,Mrs. Gertrude Maybelle Thorne,38,79.2,0,0
+Yes,Female,First,Miss. Gladys Cherry,30,86.5,0,0
+Yes,Female,First,Miss. Anna Ward,35,512.3292,0,0
+Yes,Female,Second,Mrs. (Lutie Davis) Parrish,50,26,0,1
+Yes,Male,Third,Master. Edvin Rojj Felix Asplund,3,31.3875,4,2
+No,Male,First,Mr. Emil Taussig,52,79.65,1,1
+No,Male,First,Mr. William Harrison,40,0,0,0
+No,Female,Third,Miss. Delia Henry,21,7.75,0,0
+No,Male,Second,Mr. David Reeves,36,10.5,0,0
+No,Male,Third,Mr. Ernesti Arvid Panula,16,39.6875,4,1
+Yes,Male,Third,Mr. Ernst Ulrik Persson,25,7.775,1,0
+Yes,Female,First,Mrs. William Thompson (Edith Junkins) Graham,58,153.4625,0,1
+Yes,Female,First,Miss. Amelia Bissette,35,135.6333,0,0
+No,Male,First,Mr. Alexander Cairns,28,31,0,0
+Yes,Male,Third,Mr. William Henry Tornquist,25,0,0,0
+Yes,Female,Second,Mrs. (Elizabeth Anne Maidment) Mellinger,41,19.5,0,1
+No,Male,First,Mr. Charles H Natsch,37,29.7,0,1
+Yes,Female,Third,Miss. Hanora Healy,33,7.75,0,0
+Yes,Female,First,Miss. Kornelia Theodosia Andrews,63,77.9583,1,0
+No,Female,Third,Miss. Augusta Charlotta Lindblom,45,7.75,0,0
+No,Male,Second,Mr. Francis Parkes,21,0,0,0
+No,Male,Third,Master. Eric Rice,7,29.125,4,1
+Yes,Female,Third,Mrs. Stanton (Rosa Hunt) Abbott,35,20.25,1,1
+No,Male,Third,Mr. Frank Duane,65,7.75,0,0
+No,Male,Third,Mr. Nils Johan Goransson Olsson,28,7.8542,0,0
+No,Male,Third,Mr. Alfons de Pelsmaeker,16,9.5,0,0
+Yes,Male,Third,Mr. Edward Arthur Dorking,19,8.05,0,0
+No,Male,First,Mr. Richard William Smith,57,26,0,0
+No,Male,Third,Mr. Ivan Stankovic,33,8.6625,0,0
+Yes,Male,Third,Mr. Theodore de Mulder,30,9.5,0,0
+No,Male,Third,Mr. Penko Naidenoff,22,7.8958,0,0
+Yes,Male,Second,Mr. Masabumi Hosono,42,13,0,0
+Yes,Female,Third,Miss. Kate Connolly,22,7.75,0,0
+Yes,Female,First,Miss. Ellen Barber,26,78.85,0,0
+Yes,Female,First,Mrs. Dickinson H (Helen Walton) Bishop,19,91.0792,1,0
+No,Male,Second,Mr. Rene Jacques Levy,36,12.875,0,0
+No,Female,Third,Miss. Aloisia Haas,24,8.85,0,0
+No,Male,Third,Mr. Ivan Mineff,24,7.8958,0,0
+No,Male,First,Mr. Ervin G Lewy,30,27.7208,0,0
+No,Male,Third,Mr. Mansour Hanna,23.5,7.2292,0,0
+No,Female,First,Miss. Helen Loraine Allison,2,151.55,1,2
+Yes,Male,First,Mr. Adolphe Saalfeld,47,30.5,0,0
+Yes,Female,First,Mrs. James (Helene DeLaudeniere Chaput) Baxter,50,247.5208,0,1
+Yes,Female,Third,Miss. Anna Katherine Kelly,20,7.75,0,0
+Yes,Male,Third,Mr. Bernard McCoy,24,23.25,2,0
+No,Male,Third,Mr. William Cahoone Jr Johnson,19,0,0,0
+Yes,Female,Second,Miss. Nora A Keane,46,12.35,0,0
+No,Male,Third,Mr. Howard Hugh Williams,28,8.05,0,0
+Yes,Male,First,Master. Hudson Trevor Allison,0.92,151.55,1,2
+Yes,Female,First,Miss. Margaret Fleming,42,110.8833,0,0
+Yes,Female,First,Mrs. Victor de Satode (Maria Josefa Perez de Soto y Vallejo) Penasco y Castellana,17,108.9,1,0
+No,Male,Second,Mr. Samuel Abelson,30,24,1,0
+Yes,Female,First,Miss. Laura Mabel Francatelli,30,56.9292,0,0
+Yes,Female,First,Miss. Margaret Bechstein Hays,24,83.1583,0,0
+Yes,Female,First,Miss. Emily Borie Ryerson,18,262.375,2,2
+No,Female,Second,Mrs. William (Anna Sylfven) Lahtinen,26,26,1,1
+No,Male,Third,Mr. Ignjac Hendekovic,28,7.8958,0,0
+No,Male,Second,Mr. Benjamin Hart,43,26.25,1,1
+Yes,Female,Third,Miss. Helmina Josefina Nilsson,26,7.8542,0,0
+Yes,Female,Second,Mrs. Sinai (Miriam Sternin) Kantor,24,26,1,0
+No,Male,Second,Dr. Ernest Moraweck,54,14,0,0
+Yes,Female,First,Miss. Mary Natalie Wick,31,164.8667,0,2
+Yes,Female,First,Mrs. Frederic Oakley (Margaretta Corning Stone) Spedden,40,134.5,1,1
+No,Male,Third,Mr. Samuel Dennis,22,7.25,0,0
+No,Male,Third,Mr. Yoto Danoff,27,7.8958,0,0
+Yes,Female,Second,Miss. Hilda Mary Slayter,30,12.35,0,0
+Yes,Female,Second,Mrs. Albert Francis (Sylvia Mae Harbaugh) Caldwell,22,29,1,1
+No,Male,Third,Mr. George John Jr Sage,20,69.55,8,2
+Yes,Female,First,Miss. Marie Grice Young,36,135.6333,0,0
+No,Male,Third,Mr. Johan Hansen Nysveen,61,6.2375,0,0
+Yes,Female,Second,Mrs. (Ada E Hall) Ball,36,13,0,0
+Yes,Female,Third,Mrs. Frank John (Emily Alice Brown) Goldsmith,31,20.525,1,1
+Yes,Female,First,Miss. Jean Gertrude Hippach,16,57.9792,0,1
+Yes,Female,Third,Miss. Agnes McCoy,28,23.25,2,0
+No,Male,First,Mr. Austen Partner,45.5,28.5,0,0
+No,Male,First,Mr. George Edward Graham,38,153.4625,0,1
+No,Male,Third,Mr. Leo Edmondus Vander Planke,16,18,2,0
+Yes,Female,First,Mrs. Henry William (Clara Heinsheimer) Frauenthal,42,133.65,1,0
+No,Male,Third,Mr. Mitto Denkoff,30,7.8958,0,0
+No,Male,First,Mr. Thomas Clinton Pears,29,66.6,1,0
+Yes,Female,First,Miss. Elizabeth Margaret Burns,41,134.5,0,0
+Yes,Male,Third,Mr. Karl Edwart Dahl,45,8.05,0,0
+No,Male,First,Mr. Stephen Weart Blackwell,45,35.5,0,0
+Yes,Male,Second,Master. Edmond Roger Navratil,2,26,1,1
+Yes,Female,First,Miss. Alice Elizabeth Fortune,24,263,3,2
+No,Male,Second,Mr. Erik Gustaf Collander,28,13,0,0
+No,Male,Second,Mr. Charles Frederick Waddington Sedgwick,25,13,0,0
+No,Male,Second,Mr. Stanley Hubert Fox,36,13,0,0
+Yes,Female,Second,Miss. Amelia Brown,24,13,0,0
+Yes,Female,Second,Miss. Marion Elsie Smith,40,13,0,0
+Yes,Female,Third,Mrs. Thomas Henry (Mary E Finck) Davison,34,16.1,1,0
+Yes,Male,Third,Master. William Loch Coutts,3,15.9,1,1
+No,Male,Third,Mr. Jovan Dimic,42,8.6625,0,0
+No,Male,Third,Mr. Nils Martin Odahl,23,9.225,0,0
+No,Male,First,Mr. Fletcher Fellows Williams-Lambert,43,35,0,0
+No,Male,Third,Mr. Tannous Elias,15,7.2292,1,1
+No,Male,Third,Mr. Josef Arnold-Franchi,25,17.8,1,0
+No,Male,Third,Mr. Wazli Yousif,23,7.225,0,0
+No,Male,Third,Mr. Leo Peter Vanden Steen,28,9.5,0,0
+Yes,Female,First,Miss. Elsie Edith Bowerman,22,55,0,1
+No,Female,Second,Miss. Annie Clemmer Funk,38,13,0,0
+Yes,Female,Third,Miss. Mary McGovern,22,7.8792,0,0
+Yes,Female,Third,Miss. Helen Mary Mockler,23,7.8792,0,0
+No,Male,Third,Mr. Wilhelm Skoog,40,27.9,1,4
+No,Male,Second,Mr. Sebastiano del Carlo,29,27.7208,1,0
+No,Female,Third,Mrs. (Catherine David) Barbara,45,14.4542,0,1
+No,Male,Third,Mr. Adola Asim,35,7.05,0,0
+No,Male,Third,Mr. Thomas O'Brien,27,15.5,1,0
+No,Male,Third,Mr. Mauritz Nils Martin Adahl,30,7.25,0,0
+Yes,Female,First,Mrs. Frank Manley (Anna Sophia Atkinson) Warren,60,75.25,1,0
+Yes,Female,Third,Mrs. (Mantoura Boulos) Moussa,35,7.2292,0,0
+Yes,Female,Third,Miss. Annie Jermyn,22,7.75,0,0
+Yes,Female,First,Mme. Leontine Pauline Aubart,24,69.3,0,0
+Yes,Male,First,Mr. George Achilles Harder,25,55.4417,1,0
+No,Male,Third,Mr. Jakob Alfred Wiklund,18,6.4958,1,0
+No,Male,Third,Mr. William Thomas Beavan,19,8.05,0,0
+No,Male,First,Mr. Sante Ringhini,22,135.6333,0,0
+No,Female,Third,Miss. Stina Viola Palsson,3,21.075,3,1
+Yes,Female,First,Mrs. Edgar Joseph (Leila Saks) Meyer,25,82.1708,1,0
+Yes,Female,Third,Miss. Aurora Adelia Landergren,22,7.25,0,0
+No,Male,First,Mr. Harry Elkins Widener,27,211.5,0,2
+No,Male,Third,Mr. Tannous Betros,20,4.0125,0,0
+No,Male,Third,Mr. Karl Gideon Gustafsson,19,7.775,0,0
+Yes,Female,First,Miss. Rosalie Bidois,42,227.525,0,0
+Yes,Female,Third,Miss. Maria Nakid,1,15.7417,0,2
+No,Male,Third,Mr. Juho Tikkanen,32,7.925,0,0
+Yes,Female,First,Mrs. Alexander Oskar (Mary Aline Towner) Holverson,35,52,1,0
+No,Male,Third,Mr. Vasil Plotcharsky,27,7.8958,0,0
+No,Male,Second,Mr. Charles Henry Davies,18,73.5,0,0
+No,Male,Third,Master. Sidney Leonard Goodwin,1,46.9,5,2
+Yes,Female,Second,Miss. Kate Buss,36,13,0,0
+No,Male,Third,Mr. Matthew Sadlier,19,7.7292,0,0
+Yes,Female,Second,Miss. Bertha Lehmann,17,12,0,0
+Yes,Male,First,Mr. William Ernest Carter,36,120,1,2
+Yes,Male,Third,Mr. Carl Olof Jansson,21,7.7958,0,0
+No,Male,Third,Mr. Johan Birger Gustafsson,28,7.925,2,0
+Yes,Female,First,Miss. Marjorie Newell,23,113.275,1,0
+Yes,Female,Third,Mrs. Hjalmar (Agnes Charlotta Bengtsson) Sandstrom,24,16.7,0,2
+No,Male,Third,Mr. Erik Johansson,22,7.7958,0,0
+No,Female,Third,Miss. Elina Olsson,31,7.8542,0,0
+No,Male,Second,Mr. Peter David McKane,46,26,0,0
+No,Male,Second,Dr. Alfred Pain,23,10.5,0,0
+Yes,Female,Second,Mrs. William H (Jessie L) Trout,28,12.65,0,0
+Yes,Male,Third,Mr. Juha Niskanen,39,7.925,0,0
+No,Male,Third,Mr. John Adams,26,8.05,0,0
+No,Female,Third,Miss. Mari Aina Jussila,21,9.825,1,0
+No,Male,Third,Mr. Pekka Pietari Hakkarainen,28,15.85,1,0
+No,Female,Third,Miss. Marija Oreskovic,20,8.6625,0,0
+No,Male,Second,Mr. Shadrach Gale,34,21,1,0
+No,Male,Third,Mr. Carl/Charles Peter Widegren,51,7.75,0,0
+Yes,Male,Second,Master. William Rowe Richards,3,18.75,1,1
+No,Male,Third,Mr. Hans Martin Monsen Birkeland,21,7.775,0,0
+No,Female,Third,Miss. Ida Lefebre,3,25.4667,3,1
+No,Male,Third,Mr. Todor Sdycoff,42,7.8958,0,0
+No,Male,Third,Mr. Henry Hart,27,6.8583,0,0
+Yes,Female,First,Miss. Daisy E Minahan,33,90,1,0
+No,Male,Second,Mr. Alfred Fleming Cunningham,22,0,0,0
+Yes,Male,Third,Mr. Johan Julian Sundman,44,7.925,0,0
+No,Female,Third,Mrs. Thomas (Annie Louise Rowley) Meek,32,8.05,0,0
+Yes,Female,Second,Mrs. James Vivian (Lulu Thorne Christian) Drew,34,32.5,1,1
+Yes,Female,Second,Miss. Lyyli Karoliina Silven,18,13,0,2
+No,Male,Second,Mr. William John Matthews,30,13,0,0
+No,Female,Third,Miss. Catharina Van Impe,10,24.15,0,2
+No,Male,Third,Mr. David Charters,21,7.7333,0,0
+No,Male,Third,Mr. Leo Zimmerman,29,7.875,0,0
+No,Female,Third,Mrs. Ernst Gilbert (Anna Sigrid Maria Brogren) Danbom,28,14.4,1,1
+No,Male,Third,Mr. Viktor Richard Rosblom,18,20.2125,1,1
+No,Male,Third,Mr. Phillippe Wiseman,54,7.25,0,0
+Yes,Female,Second,Mrs. Charles V (Ada Maria Winfield) Clarke,28,26,1,0
+Yes,Female,Second,Miss. Kate Florence Phillips,19,26,0,0
+No,Male,Third,Mr. James Flynn,28,7.75,0,0
+Yes,Male,Third,Mr. Berk (Berk Trembisky) Pickard,32,8.05,0,0
+Yes,Male,First,Mr. Mauritz Hakan Bjornstrom-Steffansson,28,26.55,0,0
+Yes,Female,Third,Mrs. Percival (Florence Kate White) Thorneycroft,33,16.1,1,0
+Yes,Female,Second,Mrs. Charles Alexander (Alice Adelaide Slow) Louch,42,26,1,0
+No,Male,Third,Mr. Nikolai Erland Kallio,17,7.125,0,0
+No,Male,First,Mr. William Baird Silvey,50,55.9,1,0
+Yes,Female,First,Miss. Lucile Polk Carter,14,120,1,2
+No,Female,Third,Miss. Doolina Margaret Ford,21,34.375,2,2
+Yes,Female,Second,Mrs. Sidney (Emily Hocking) Richards,24,18.75,2,3
+No,Male,First,Mr. Mark Fortune,64,263,1,4
+No,Male,Second,Mr. Johan Henrik Johannesson Kvillner,31,10.5,0,0
+Yes,Female,Second,Mrs. Benjamin (Esther Ada Bloomfield) Hart,45,26.25,1,1
+No,Male,Third,Mr. Leon Hampe,20,9.5,0,0
+No,Male,Third,Mr. Johan Emil Petterson,25,7.775,1,0
+Yes,Female,Second,Ms. Encarnacion Reynaldo,28,13,0,0
+Yes,Male,Third,Mr. Bernt Johannesen-Bratthammer,29,8.1125,0,0
+Yes,Male,First,Master. Washington Dodge,4,81.8583,0,2
+Yes,Female,Second,Miss. Madeleine Violet Mellinger,13,19.5,0,1
+Yes,Male,First,Mr. Frederic Kimber Seward,34,26.55,0,0
+Yes,Female,Third,Miss. Marie Catherine Baclini,5,19.2583,2,1
+Yes,Male,First,Major. Arthur Godfrey Peuchen,52,30.5,0,0
+No,Male,Second,Mr. Edwy Arthur West,36,27.75,1,2
+No,Male,Third,Mr. Ingvald Olai Olsen Hagland,28,19.9667,1,0
+No,Male,First,Mr. Benjamin Laventall Foreman,30,27.75,0,0
+Yes,Male,First,Mr. Samuel L Goldenberg,49,89.1042,1,0
+No,Male,Third,Mr. Joseph Peduzzi,24,8.05,0,0
+Yes,Male,Third,Mr. Ivan Jalsevac,29,7.8958,0,0
+No,Male,First,Mr. Francis Davis Millet,65,26.55,0,0
+Yes,Female,First,Mrs. Frederick R (Marion) Kenyon,41,51.8625,1,0
+Yes,Female,Second,Miss. Ellen Toomey,50,10.5,0,0
+No,Male,Third,Mr. Maurice O'Connor,17,7.75,0,0
+Yes,Male,First,Mr. Harry Anderson,48,26.55,0,0
+No,Male,Third,Mr. William Morley,34,8.05,0,0
+No,Male,First,Mr. Arthur H Gee,47,38.5,0,0
+No,Male,Second,Mr. Jacob Christian Milling,48,13,0,0
+No,Male,Third,Mr. Simon Maisner,34,8.05,0,0
+No,Male,Third,Mr. Manuel Estanslas Goncalves,38,7.05,0,0
+No,Male,Second,Mr. William Campbell,21,0,0,0
+No,Male,First,Mr. John Montgomery Smart,56,26.55,0,0
+No,Male,Third,Mr. James Scanlan,22,7.725,0,0
+Yes,Female,Third,Miss. Helene Barbara Baclini,0.75,19.2583,2,1
+No,Male,Third,Mr. Arthur Keefe,39,7.25,0,0
+No,Male,Third,Mr. Luka Cacic,38,8.6625,0,0
+Yes,Female,Second,Mrs. Edwy Arthur (Ada Mary Worth) West,33,27.75,1,2
+Yes,Female,Second,Mrs. Amin S (Marie Marthe Thuillard) Jerwan,23,13.7917,0,0
+No,Female,Third,Miss. Ida Sofia Strandberg,22,9.8375,0,0
+No,Male,First,Mr. George Quincy Clifford,40,52,0,0
+No,Male,Second,Mr. Peter Henry Renouf,34,21,1,0
+No,Male,Third,Mr. Lewis Richard Braund,29,7.0458,1,0
+No,Male,Third,Mr. Nils August Karlsson,22,7.5208,0,0
+Yes,Female,Third,Miss. Hildur E Hirvonen,2,12.2875,0,1
+No,Male,Third,Master. Harold Victor Goodwin,9,46.9,5,2
+No,Male,Second,Mr. Anthony Wood Frost,37,0,0,0
+No,Male,Third,Mr. Richard Henry Rouse,50,8.05,0,0
+Yes,Female,Third,Mrs. (Hedwig) Turkula,63,9.5875,0,0
+Yes,Male,First,Mr. Dickinson H Bishop,25,91.0792,1,0
+No,Female,Third,Miss. Jeannie Lefebre,8,25.4667,3,1
+Yes,Female,First,Mrs. Frederick Maxfield (Jane Anne Forby) Hoyt,35,90,1,0
+No,Male,First,Mr. Edward Austin Kent,58,29.7,0,0
+No,Male,Third,Mr. Francis William Somerton,30,8.05,0,0
+Yes,Male,Third,Master. Eden Leslie Coutts,9,15.9,1,1
+No,Male,Third,Mr. Konrad Mathias Reiersen Hagland,19,19.9667,1,0
+No,Male,Third,Mr. Einar Windelov,21,7.25,0,0
+No,Male,First,Mr. Harry Markland Molson,55,30.5,0,0
+No,Male,First,Mr. Ramon Artagaveytia,71,49.5042,0,0
+No,Male,Third,Mr. Edward Roland Stanley,21,8.05,0,0
+No,Male,Third,Mr. Gerious Yousseff,26,14.4583,0,0
+Yes,Female,First,Miss. Elizabeth Mussey Eustis,54,78.2667,1,0
+No,Male,Third,Mr. Frederick William Shellard,55,15.1,0,0
+No,Female,First,Mrs. Hudson J C (Bessie Waldo Daniels) Allison,25,151.55,1,2
+No,Male,Third,Mr. Olof Svensson,24,7.7958,0,0
+No,Male,Third,Mr. Petar Calic,17,8.6625,0,0
+No,Female,Third,Miss. Mary Canavan,21,7.75,0,0
+No,Female,Third,Miss. Bridget Mary O'Sullivan,21,7.6292,0,0
+No,Female,Third,Miss. Kristina Sofia Laitinen,37,9.5875,0,0
+Yes,Female,First,Miss. Roberta Maioni,16,86.5,0,0
+No,Male,First,Mr. Victor de Satode Penasco y Castellana,18,108.9,1,0
+Yes,Female,Second,Mrs. Frederick Charles (Jane Richards) Quick,33,26,0,2
+Yes,Male,First,Mr. George Bradley,37,26.55,0,0
+No,Male,Third,Mr. Henry Margido Olsen,28,22.525,0,0
+Yes,Male,Third,Mr. Fang Lang,26,56.4958,0,0
+Yes,Male,Third,Mr. Eugene Patrick Daly,29,7.75,0,0
+No,Male,Third,Mr. James Webber,66,8.05,0,0
+Yes,Male,First,Mr. James Robert McGough,36,26.2875,0,0
+Yes,Female,First,Mrs. Martin (Elizabeth L. Barrett) Rothschild,54,59.4,1,0
+No,Male,Third,Mr. Satio Coleff,24,7.4958,0,0
+No,Male,First,Mr. William Anderson Walker,47,34.0208,0,0
+Yes,Female,Second,Mrs. (Amelia Milley) Lemore,34,10.5,0,0
+No,Male,Third,Mr. Patrick Ryan,30,24.15,0,0
+Yes,Female,Second,Mrs. William A (Florence Agnes Hughes) Angle,36,26,1,0
+No,Male,Third,Mr. Stefo Pavlovic,32,7.8958,0,0
+Yes,Female,First,Miss. Anne Perreault,30,93.5,0,0
+No,Male,Third,Mr. Janko Vovk,22,7.8958,0,0
+No,Male,Third,Mr. Sarkis Lahoud,35,7.225,0,0
+Yes,Female,First,Mrs. Louis Albert (Ida Sophia Fischer) Hippach,44,57.9792,0,1
+No,Male,Third,Mr. Fared Kassem,18,7.2292,0,0
+No,Male,Third,Mr. James Farrell,40.5,7.75,0,0
+Yes,Female,Second,Miss. Lucy Ridsdale,50,10.5,0,0
+No,Male,First,Mr. John Farthing,49,221.7792,0,0
+No,Male,Third,Mr. Johan Werner Salonen,39,7.925,0,0
+No,Male,Second,Mr. Richard George Hocking,23,11.5,2,1
+Yes,Female,Second,Miss. Phyllis May Quick,2,26,1,1
+No,Male,Third,Mr. Nakli Toufik,17,7.2292,0,0
+No,Male,Third,Mr. Joseph Jr Elias,17,7.2292,1,1
+Yes,Female,Third,Mrs. Catherine (Catherine Rizk) Peter,24,22.3583,0,2
+No,Female,Third,Miss. Marija Cacic,30,8.6625,0,0
+Yes,Female,Second,Miss. Eva Miriam Hart,7,26.25,0,2
+No,Male,First,Major. Archibald Willingham Butt,45,26.55,0,0
+Yes,Female,First,Miss. Bertha LeRoy,30,106.425,0,0
+No,Male,Third,Mr. Samuel Beard Risien,69,14.5,0,0
+Yes,Female,First,Miss. Hedwig Margaritha Frolicher,22,49.5,0,2
+Yes,Female,First,Miss. Harriet R Crosby,36,71,0,2
+No,Female,Third,Miss. Ingeborg Constanzia Andersson,9,31.275,4,2
+No,Female,Third,Miss. Sigrid Elisabeth Andersson,11,31.275,4,2
+Yes,Male,Second,Mr. Edward Beane,32,26,1,0
+No,Male,First,Mr. Walter Donald Douglas,50,106.425,1,0
+No,Male,First,Mr. Arthur Ernest Nicholson,64,26,0,0
+Yes,Female,Second,Mrs. Edward (Ethel Clarke) Beane,19,26,1,0
+Yes,Male,Second,Mr. Julian Padro y Manent,27,13.8625,0,0
+No,Male,Third,Mr. Frank John Goldsmith,33,20.525,1,1
+Yes,Male,Second,Master. John Morgan Jr Davies,8,36.75,1,1
+Yes,Male,First,Mr. John Borland Jr Thayer,17,110.8833,0,2
+No,Male,Second,Mr. Percival James R Sharp,27,26,0,0
+No,Male,Third,Mr. Timothy O'Brien,21,7.8292,0,0
+Yes,Male,Third,Mr. Fahim Leeni,22,7.225,0,0
+Yes,Female,Third,Miss. Velin Ohman,22,7.775,0,0
+No,Male,First,Mr. George Wright,62,26.55,0,0
+Yes,Female,First,Lady. (Lucille Christiana Sutherland)Duff Gordon,48,39.6,1,0
+No,Male,First,Mr. Victor Robbins,45,227.525,0,0
+Yes,Female,First,Mrs. Emil (Tillie Mandelbaum) Taussig,39,79.65,1,1
+Yes,Female,Third,Mrs. Guillaume Joseph (Emma) de Messemaeker,36,17.4,1,0
+No,Male,Third,Mr. Thomas Rowan Morrow,30,7.75,0,0
+No,Male,Third,Mr. Husein Sivic,40,7.8958,0,0
+No,Male,Second,Mr. Robert Douglas Norman,28,13.5,0,0
+No,Male,Third,Mr. John Simmons,40,8.05,0,0
+No,Female,Third,Miss. (Marion Ogden) Meanwell,62,8.05,0,0
+No,Male,Third,Mr. Alfred J Davies,24,24.15,2,0
+No,Male,Third,Mr. Ilia Stoytcheff,19,7.8958,0,0
+No,Female,Third,Mrs. Nils (Alma Cornelia Berglund) Palsson,29,21.075,0,4
+No,Male,Third,Mr. Tannous Doharr,28,7.2292,0,0
+Yes,Male,Third,Mr. Carl Jonsson,32,7.8542,0,0
+Yes,Male,Second,Mr. George Harris,62,10.5,0,0
+Yes,Female,First,Mrs. Edward Dale (Charlotte Lamson) Appleton,53,51.4792,2,0
+Yes,Male,First,Mr. John Irwin Flynn,36,26.3875,0,0
+Yes,Female,Third,Miss. Mary Kelly,22,7.75,0,0
+No,Male,Third,Mr. Alfred George John Rush,16,8.05,0,0
+No,Male,Third,Mr. George Patchett,19,14.5,0,0
+Yes,Female,Second,Miss. Ethel Garside,34,13,0,0
+Yes,Female,First,Mrs. William Baird (Alice Munger) Silvey,39,55.9,1,0
+No,Female,Third,Mrs. Joseph (Maria Elias) Caram,18,14.4583,1,0
+Yes,Male,Third,Mr. Eiriik Jussila,32,7.925,0,0
+Yes,Female,Second,Miss. Julie Rachel Christy,25,30,1,1
+Yes,Female,First,Mrs. John Borland (Marian Longstreth Morris) Thayer,39,110.8833,1,1
+No,Male,Second,Mr. William James Downton,54,26,0,0
+No,Male,First,Mr. John Hugo Ross,36,40.125,0,0
+No,Male,Third,Mr. Uscher Paulner,16,8.7125,0,0
+Yes,Female,First,Miss. Ruth Taussig,18,79.65,0,2
+No,Male,Second,Mr. John Denzil Jarvis,47,15,0,0
+Yes,Male,First,Mr. Maxmillian Frolicher-Stehli,60,79.2,1,1
+No,Male,Third,Mr. Eliezer Gilinski,22,8.05,0,0
+No,Male,Third,Mr. Joseph Murdlin,22,8.05,0,0
+No,Male,Third,Mr. Matti Rintamaki,35,7.125,0,0
+Yes,Female,First,Mrs. Walter Bertram (Martha Eustis) Stephenson,52,78.2667,1,0
+No,Male,Third,Mr. William James Elsbury,47,7.25,0,0
+No,Female,Third,Miss. Mary Bourke,40,7.75,0,2
+No,Male,Second,Mr. John Henry Chapman,37,26,1,0
+No,Male,Third,Mr. Jean Baptiste Van Impe,36,24.15,1,1
+Yes,Female,Second,Miss. Jessie Wills Leitch,31,33,0,0
+No,Male,Third,Mr. Alfred Johnson,49,0,0,0
+No,Male,Third,Mr. Hanna Boulos,18,7.225,0,0
+Yes,Male,First,Sir. Cosmo Edmund Duff Gordon,49,56.9292,1,0
+Yes,Female,Second,Mrs. Sidney Samuel (Amy Frances Christy) Jacobsohn,24,27,2,1
+No,Male,Third,Mr. Petco Slabenoff,42,7.8958,0,0
+No,Male,First,Mr. Charles H Harrington,37,42.4,0,0
+No,Male,Third,Mr. Ernst William Torber,44,8.05,0,0
+Yes,Male,First,Mr. Harry Homer,35,26.55,0,0
+No,Male,Third,Mr. Edvard Bengtsson Lindell,36,15.55,1,0
+No,Male,Third,Mr. Milan Karaic,30,7.8958,0,0
+Yes,Male,First,Mr. Robert Williams Daniel,27,30.5,0,0
+Yes,Female,Second,Mrs. Joseph (Juliette Marie Louise Lafargue) Laroche,22,41.5792,1,2
+Yes,Female,First,Miss. Elizabeth W Shutes,40,153.4625,0,0
+No,Female,Third,Mrs. Anders Johan (Alfrida Konstantia Brogren) Andersson,39,31.275,1,5
+No,Male,Third,Mr. Jose Neto Jardin,21,7.05,0,0
+Yes,Female,Third,Miss. Margaret Jane Murphy,18,15.5,1,0
+No,Male,Third,Mr. John Horgan,22,7.75,0,0
+No,Male,Third,Mr. William Alfred Brocklebank,35,8.05,0,0
+Yes,Female,Second,Miss. Alice Herman,24,65,1,2
+No,Male,Third,Mr. Ernst Gilbert Danbom,34,14.4,1,1
+No,Female,Third,Mrs. William Arthur (Cordelia K Stanlick) Lobb,26,16.1,1,0
+Yes,Female,Second,Miss. Marion Louise Becker,4,39,2,1
+No,Male,Second,Mr. Lawrence Gavey,26,10.5,0,0
+No,Male,Third,Mr. Antoni Yasbeck,27,14.4542,1,0
+Yes,Male,First,Mr. Edwin Nelson Jr Kimball,42,52.5542,1,0
+Yes,Male,Third,Mr. Sahid Nakid,20,15.7417,1,1
+No,Male,Third,Mr. Henry Damsgaard Hansen,21,7.8542,0,0
+No,Male,Third,Mr. David John Bowen,21,16.1,0,0
+No,Male,First,Mr. Frederick Sutton,61,32.3208,0,0
+No,Male,Second,Rev. Charles Leonard Kirkland,57,12.35,0,0
+Yes,Female,First,Miss. Gretchen Fiske Longley,21,77.9583,0,0
+No,Male,Third,Mr. Guentcho Bostandyeff,26,7.8958,0,0
+No,Male,Third,Mr. Patrick D O'Connell,18,7.7333,0,0
+Yes,Male,First,Mr. Algernon Henry Wilson Barkworth,80,30,0,0
+No,Male,Third,Mr. Johan Svensson Lundahl,51,7.0542,0,0
+Yes,Male,First,Dr. Max Stahelin-Maeglin,32,30.5,0,0
+No,Male,First,Mr. William Henry Marsh Parr,30,0,0,0
+No,Female,Third,Miss. Mabel Skoog,9,27.9,3,2
+Yes,Female,Second,Miss. Mary Davis,28,13,0,0
+No,Male,Third,Mr. Antti Gustaf Leinonen,32,7.925,0,0
+No,Male,Second,Mr. Harvey Collyer,31,26.25,1,1
+No,Female,Third,Mrs. Juha (Maria Emilia Ojala) Panula,41,39.6875,0,5
+No,Male,Third,Mr. Percival Thorneycroft,37,16.1,1,0
+No,Male,Third,Mr. Hans Peder Jensen,20,7.8542,0,0
+Yes,Female,First,Mlle. Emma Sagesser,24,69.3,0,0
+No,Female,Third,Miss. Margit Elizabeth Skoog,2,27.9,3,2
+Yes,Male,Third,Mr. Choong Foo,32,56.4958,0,0
+Yes,Female,Third,Miss. Eugenie Baclini,0.75,19.2583,2,1
+Yes,Male,First,Mr. Henry Sleeper Harper,48,76.7292,1,0
+No,Male,Third,Mr. Liudevit Cor,19,7.8958,0,0
+Yes,Male,First,Col. Oberst Alfons Simonius-Blumer,56,35.5,0,0
+No,Male,Third,Mr. Edward Willey,21,7.55,0,0
+Yes,Female,Third,Miss. Amy Zillah Elsie Stanley,23,7.55,0,0
+No,Male,Third,Mr. Mito Mitkoff,23,7.8958,0,0
+Yes,Female,Second,Miss. Elsie Doling,18,23,0,1
+No,Male,Third,Mr. Johannes Halvorsen Kalvik,21,8.4333,0,0
+Yes,Female,Third,Miss. Hanora O'Leary,16,7.8292,0,0
+No,Female,Third,Miss. Hanora Hegarty,18,6.75,0,0
+No,Male,Second,Mr. Leonard Mark Hickman,24,73.5,2,0
+No,Male,Third,Mr. Alexander Radeff,27,7.8958,0,0
+No,Female,Third,Mrs. John (Catherine) Bourke,32,15.5,1,1
+No,Male,Second,Mr. George Floyd Eitemiller,23,13,0,0
+No,Male,First,Mr. Arthur Webster Newell,58,113.275,0,2
+Yes,Male,First,Dr. Henry William Frauenthal,50,133.65,2,0
+No,Male,Third,Mr. Mohamed Badt,40,7.225,0,0
+No,Male,First,Mr. Edward Pomeroy Colley,47,25.5875,0,0
+No,Male,Third,Mr. Peju Coleff,36,7.4958,0,0
+Yes,Male,Third,Mr. Eino William Lindqvist,20,7.925,1,0
+No,Male,Second,Mr. Lewis Hickman,32,73.5,2,0
+No,Male,Second,Mr. Reginald Fenton Butler,25,13,0,0
+No,Male,Third,Mr. Knud Paust Rommetvedt,49,7.775,0,0
+No,Male,Third,Mr. Jacob Cook,43,8.05,0,0
+Yes,Female,First,Mrs. Elmer Zebley (Juliet Cummins Wright) Taylor,48,52,1,0
+Yes,Female,Second,Mrs. Thomas William Solomon (Elizabeth Catherine Ford) Brown,40,39,1,1
+No,Male,First,Mr. Thornton Davidson,31,52,1,0
+No,Male,Second,Mr. Henry Michael Mitchell,70,10.5,0,0
+Yes,Male,Second,Mr. Charles Wilhelms,31,13,0,0
+No,Male,Second,Mr. Ennis Hastings Watson,19,0,0,0
+No,Male,Third,Mr. Gustaf Hjalmar Edvardsson,18,7.775,0,0
+No,Male,Third,Mr. Frederick Charles Sawyer,24.5,8.05,0,0
+Yes,Female,Third,Miss. Anna Sofia Turja,18,9.8417,0,0
+No,Female,Third,Mrs. Frederick (Augusta Tyler) Goodwin,43,46.9,1,6
+Yes,Male,First,Mr. Thomas Drake Martinez Cardeza,36,512.3292,0,1
+No,Female,Third,Miss. Katie Peters,28,8.1375,0,0
+Yes,Male,First,Mr. Hammad Hassab,27,76.7292,0,0
+No,Male,Third,Mr. Thor Anderson Olsvigen,20,9.225,0,0
+No,Male,Third,Mr. Charles Edward Goodwin,14,46.9,5,2
+No,Male,Second,Mr. Thomas William Solomon Brown,60,39,1,1
+No,Male,Second,Mr. Joseph Philippe Lemercier Laroche,25,41.5792,1,2
+No,Male,Third,Mr. Jaako Arnold Panula,14,39.6875,4,1
+No,Male,Third,Mr. Branko Dakic,19,10.1708,0,0
+No,Male,Third,Mr. Eberhard Thelander Fischer,18,7.7958,0,0
+Yes,Female,First,Miss. Georgette Alexandra Madill,15,211.3375,0,1
+Yes,Male,First,Mr. Albert Adrian Dick,31,57,1,0
+Yes,Female,Third,Miss. Manca Karun,4,13.4167,0,1
+Yes,Male,Third,Mr. Ali Lam,37,56.4958,0,0
+No,Male,Third,Mr. Khalil Saad,25,7.225,0,0
+No,Male,First,Col. John Weir,60,26.55,0,0
+No,Male,Second,Mr. Charles Henry Chapman,52,13.5,0,0
+No,Male,Third,Mr. James Kelly,44,8.05,0,0
+Yes,Female,Third,Miss. Katherine Mullens,19,7.7333,0,0
+No,Male,First,Mr. John Borland Thayer,49,110.8833,1,1
+No,Male,Third,Mr. Adolf Mathias Nicolai Olsen Humblen,42,7.65,0,0
+Yes,Female,First,Mrs. John Jacob (Madeleine Talmadge Force) Astor,18,227.525,1,0
+Yes,Male,First,Mr. Spencer Victor Silverthorne,35,26.2875,0,0
+No,Female,Third,Miss. Saiide Barbara,18,14.4542,0,1
+No,Male,Third,Mr. Martin Gallagher,25,7.7417,0,0
+No,Male,Third,Mr. Henrik Juul Hansen,26,7.8542,1,0
+No,Male,Second,Mr. Henry Samuel Morley,39,26,0,0
+Yes,Female,Second,Mrs. Florence Kelly,45,13.5,0,0
+Yes,Male,First,Mr. Edward Pennington Calderhead,42,26.2875,0,0
+Yes,Female,First,Miss. Alice Cleaver,22,151.55,0,0
+Yes,Male,Third,Master. Halim Gonios Moubarek,4,15.2458,1,1
+Yes,Female,First,Mlle. Berthe Antonine Mayne,24,49.5042,0,0
+No,Male,First,Mr. Herman Klaber,41,26.55,0,0
+Yes,Male,First,Mr. Elmer Zebley Taylor,48,52,1,0
+No,Male,Third,Mr. August Viktor Larsson,29,9.4833,0,0
+No,Male,Second,Mr. Samuel Greenberg,52,13,0,0
+No,Male,Third,Mr. Peter Andreas Lauritz Andersen Soholt,19,7.65,0,0
+Yes,Female,First,Miss. Caroline Louise Endres,38,227.525,0,0
+Yes,Female,Second,Miss. Edwina Celia Troutt,27,10.5,0,0
+No,Male,Third,Mr. Malkolm Joackim Johnson,33,7.775,0,0
+Yes,Female,Second,Miss. Annie Jessie Harper,6,33,0,1
+No,Male,Third,Mr. Svend Lauritz Jensen,17,7.0542,1,0
+No,Male,Second,Mr. William Henry Gillespie,34,13,0,0
+No,Male,Second,Mr. Henry Price Hodges,50,13,0,0
+Yes,Male,First,Mr. Norman Campbell Chambers,27,53.1,1,0
+No,Male,Third,Mr. Luka Oreskovic,20,8.6625,0,0
+Yes,Female,Second,Mrs. Peter Henry (Lillian Jefferys) Renouf,30,21,3,0
+Yes,Female,Third,Miss. Margareth Mannion,28,7.7375,0,0
+No,Male,Second,Mr. Kurt Arnold Gottfrid Bryhl,25,26,1,0
+No,Female,Third,Miss. Pieta Sofia Ilmakangas,25,7.925,1,0
+Yes,Female,First,Miss. Elisabeth Walton Allen,29,211.3375,0,0
+No,Male,Third,Mr. Houssein G N Hassan,11,18.7875,0,0
+No,Male,Second,Mr. Robert J Knight,41,0,0,0
+No,Male,Second,Mr. William John Berriman,23,13,0,0
+No,Male,Second,Mr. Moses Aaron Troupiansky,23,13,0,0
+No,Male,Third,Mr. Leslie Williams,28.5,16.1,0,0
+No,Female,Third,Mrs. Edward (Margaret Ann Watson) Ford,48,34.375,1,3
+Yes,Male,First,Mr. Gustave J Lesurer,35,512.3292,0,0
+No,Male,Third,Mr. Kanio Ivanoff,20,7.8958,0,0
+No,Male,Third,Mr. Minko Nankoff,32,7.8958,0,0
+Yes,Male,First,Mr. Walter James Hawksford,45,30,0,0
+No,Male,First,Mr. Tyrell William Cavendish,36,78.85,1,0
+Yes,Female,First,Miss. Susan Parker Ryerson,21,262.375,2,2
+No,Male,Third,Mr. Neal McNamee,24,16.1,1,0
+Yes,Male,Third,Mr. Juho Stranden,31,7.925,0,0
+No,Male,First,Capt. Edward Gifford Crosby,70,71,1,1
+No,Male,Third,Mr. Rossmore Edward Abbott,16,20.25,1,1
+Yes,Female,Second,Miss. Anna Sinkkonen,30,13,0,0
+No,Male,First,Mr. Daniel Warner Marvin,19,53.1,1,0
+No,Male,Third,Mr. Michael Connaghton,31,7.75,0,0
+Yes,Female,Second,Miss. Joan Wells,4,23,1,1
+Yes,Male,Third,Master. Meier Moor,6,12.475,0,1
+No,Male,Third,Mr. Johannes Joseph Vande Velde,33,9.5,0,0
+No,Male,Third,Mr. Lalio Jonkoff,23,7.8958,0,0
+Yes,Female,Second,Mrs. Samuel (Jane Laver) Herman,48,65,1,2
+Yes,Male,Second,Master. Viljo Hamalainen,0.67,14.5,1,1
+No,Male,Third,Mr. August Sigfrid Carlsson,28,7.7958,0,0
+No,Male,Second,Mr. Percy Andrew Bailey,18,11.5,0,0
+No,Male,Third,Mr. Thomas Leonard Theobald,34,8.05,0,0
+Yes,Female,First,the Countess. of (Lucy Noel Martha Dyer-Edwards) Rothes,33,86.5,0,0
+No,Male,Third,Mr. John Garfirth,23,14.5,0,0
+No,Male,Third,Mr. Iisakki Antino Aijo Nirva,41,7.125,0,0
+Yes,Male,Third,Mr. Hanna Assi Barah,20,7.2292,0,0
+Yes,Female,First,Mrs. William Ernest (Lucile Polk) Carter,36,120,1,2
+No,Male,Third,Mr. Hans Linus Eklund,16,7.775,0,0
+Yes,Female,First,Mrs. John C (Anna Andrews) Hogeboom,51,77.9583,1,0
+No,Male,First,Dr. Arthur Jackson Brewe,46,39.6,0,0
+No,Female,Third,Miss. Mary Mangan,30.5,7.75,0,0
+No,Male,Third,Mr. Daniel J Moran,28,24.15,1,0
+No,Male,Third,Mr. Daniel Danielsen Gronnestad,32,8.3625,0,0
+No,Male,Third,Mr. Rene Aime Lievens,24,9.5,0,0
+No,Male,Third,Mr. Niels Peder Jensen,48,7.8542,0,0
+No,Female,Second,Mrs. (Mary) Mack,57,10.5,0,0
+No,Male,Third,Mr. Dibo Elias,29,7.225,0,0
+Yes,Female,Second,Mrs. Elizabeth (Eliza Needs) Hocking,54,23,1,3
+No,Male,Third,Mr. Pehr Fabian Oliver Malkolm Myhrman,18,7.75,0,0
+No,Male,Third,Mr. Roger Tobin,20,7.75,0,0
+Yes,Female,Third,Miss. Virginia Ethel Emanuel,5,12.475,0,0
+No,Male,Third,Mr. Thomas J Kilgannon,22,7.7375,0,0
+Yes,Female,First,Mrs. Edward Scott (Elisabeth Walton McMillan) Robert,43,211.3375,0,1
+Yes,Female,Third,Miss. Banoura Ayoub,13,7.2292,0,0
+Yes,Female,First,Mrs. Albert Adrian (Vera Gillespie) Dick,17,57,1,0
+No,Male,First,Mr. Milton Clyde Long,29,30,0,0
+No,Male,Third,Mr. Andrew G Johnston,35,23.45,1,2
+No,Male,Third,Mr. William Ali,25,7.05,0,0
+No,Male,Third,Mr. Abraham (David Lishin) Harmer,25,7.25,0,0
+Yes,Female,Third,Miss. Anna Sofia Sjoblom,18,7.4958,0,0
+No,Male,Third,Master. George Hugh Rice,8,29.125,4,1
+Yes,Male,Third,Master. Bertram Vere Dean,1,20.575,1,2
+No,Male,First,Mr. Benjamin Guggenheim,46,79.2,0,0
+No,Male,Third,Mr. Andrew Keane,20,7.75,0,0
+No,Male,Second,Mr. Alfred Gaskell,16,26,0,0
+No,Female,Third,Miss. Stella Anna Sage,21,69.55,8,2
+No,Male,First,Mr. William Fisher Hoyt,43,30.6958,0,0
+No,Male,Third,Mr. Ristiu Dantcheff,25,7.8958,0,0
+No,Male,Second,Mr. Richard Otter,39,13,0,0
+Yes,Female,First,Dr. Alice (Farnham) Leader,49,25.9292,0,0
+Yes,Female,Third,Mrs. Mara Osman,31,8.6833,0,0
+No,Male,Third,Mr. Yousseff Ibrahim Shawah,30,7.2292,0,0
+No,Female,Third,Mrs. Jean Baptiste (Rosalie Paula Govaert) Van Impe,30,24.15,1,1
+No,Male,Second,Mr. Martin Ponesell,34,13,0,0
+Yes,Female,Second,Mrs. Harvey (Charlotte Annie Tate) Collyer,31,26.25,1,1
+Yes,Male,First,Master. William Thornton II Carter,11,120,1,2
+Yes,Male,Third,Master. Assad Alexander Thomas,0.42,8.5167,0,1
+Yes,Male,Third,Mr. Oskar Arvid Hedman,27,6.975,0,0
+No,Male,Third,Mr. Karl Johan Johansson,31,7.775,0,0
+No,Male,First,Mr. Thomas Jr Andrews,39,0,0,0
+No,Female,Third,Miss. Ellen Natalia Pettersson,18,7.775,0,0
+No,Male,Second,Mr. August Meyer,39,13,0,0
+Yes,Female,First,Mrs. Norman Campbell (Bertha Griggs) Chambers,33,53.1,1,0
+No,Male,Third,Mr. William Alexander,26,7.8875,0,0
+No,Male,Third,Mr. James Lester,39,24.15,0,0
+No,Male,Second,Mr. Richard James Slemen,35,10.5,0,0
+No,Female,Third,Miss. Ebba Iris Alfrida Andersson,6,31.275,4,2
+No,Male,Third,Mr. Ernest Portage Tomlin,30.5,8.05,0,0
+No,Male,First,Mr. Richard Fry,39,0,0,0
+No,Female,Third,Miss. Wendla Maria Heininen,23,7.925,0,0
+No,Male,Second,Mr. Albert Mallet,31,37.0042,1,1
+No,Male,Third,Mr. John Fredrik Alexander Holm,43,6.45,0,0
+No,Male,Third,Master. Karl Thorsten Skoog,10,27.9,3,2
+Yes,Female,First,Mrs. Charles Melville (Clara Jennings Gregg) Hays,52,93.5,1,1
+Yes,Male,Third,Mr. Nikola Lulic,27,8.6625,0,0
+No,Male,First,Jonkheer. John George Reuchlin,38,0,0,0
+Yes,Female,Third,Mrs. (Beila) Moor,27,12.475,0,1
+No,Male,Third,Master. Urho Abraham Panula,2,39.6875,4,1
+No,Male,Third,Mr. John Flynn,36,6.95,0,0
+No,Male,Third,Mr. Len Lam,23,56.4958,0,0
+Yes,Male,Second,Master. Andre Mallet,1,37.0042,0,2
+Yes,Male,Third,Mr. Thomas Joseph McCormack,19,7.75,0,0
+Yes,Female,First,Mrs. George Nelson (Martha Evelyn) Stone,62,80,0,0
+Yes,Female,Third,Mrs. Antoni (Selini Alexander) Yasbeck,15,14.4542,1,0
+Yes,Male,Second,Master. George Sibley Richards,0.83,18.75,1,1
+No,Male,Third,Mr. Amin Saad,30,7.2292,0,0
+No,Male,Third,Mr. Albert Augustsson,23,7.8542,0,0
+No,Male,Third,Mr. Owen George Allum,18,8.3,0,0
+Yes,Female,First,Miss. Sara Rebecca Compton,39,83.1583,1,1
+No,Male,Third,Mr. Jakob Pasic,21,8.6625,0,0
+No,Male,Third,Mr. Maurice Sirota,20,8.05,0,0
+Yes,Male,Third,Mr. Chang Chip,32,56.4958,0,0
+Yes,Male,First,Mr. Pierre Marechal,29,29.7,0,0
+No,Male,Third,Mr. Ilmari Rudolf Alhomaki,20,7.925,0,0
+No,Male,Second,Mr. Thomas Charles Mudd,16,10.5,0,0
+Yes,Female,First,Miss. Augusta Serepeca,30,31,0,0
+No,Male,Third,Mr. Peter L Lemberopolous,34.5,6.4375,0,0
+No,Male,Third,Mr. Jeso Culumovic,17,8.6625,0,0
+No,Male,Third,Mr. Anthony Abbing,42,7.55,0,0
+No,Male,Third,Mr. Douglas Bullen Sage,18,69.55,8,2
+No,Male,Third,Mr. Marin Markoff,35,7.8958,0,0
+No,Male,Second,Rev. John Harper,28,33,0,1
+Yes,Female,First,Mrs. Samuel L (Edwiga Grabowska) Goldenberg,40,89.1042,1,0
+No,Male,Third,Master. Sigvard Harald Elias Andersson,4,31.275,4,2
+No,Male,Third,Mr. Johan Svensson,74,7.775,0,0
+No,Female,Third,Miss. Nourelain Boulos,9,15.2458,1,1
+Yes,Female,First,Miss. Mary Conover Lines,16,39.4,0,1
+No,Female,Second,Mrs. Ernest Courtenay (Lilian Hughes) Carter,44,26,1,0
+Yes,Female,Third,Mrs. Sam (Leah Rosen) Aks,18,9.35,0,1
+Yes,Female,First,Mrs. George Dennick (Mary Hitchcock) Wick,45,164.8667,1,1
+Yes,Male,First,Mr. Peter Denis Daly,51,26.55,0,0
+Yes,Female,Third,Mrs. Solomon (Latifa Qurban) Baclini,24,19.2583,0,3
+No,Male,Third,Mr. Raihed Razi,30,7.2292,0,0
+No,Male,Third,Mr. Claus Peter Hansen,41,14.1083,2,0
+No,Male,Second,Mr. Frederick Edward Giles,21,11.5,1,0
+Yes,Female,First,Mrs. Frederick Joel (Margaret Welles Barron) Swift,48,25.9292,0,0
+No,Female,Third,Miss. Dorothy Edith Sage,14,69.55,8,2
+No,Male,Second,Mr. John William Gill,24,13,0,0
+Yes,Female,Second,Mrs. (Karolina) Bystrom,42,13,0,0
+Yes,Female,Second,Miss. Asuncion Duran y More,27,13.8583,1,0
+No,Male,First,Mr. Washington Augustus II Roebling,31,50.4958,0,0
+No,Male,Third,Mr. Philemon van Melkebeke,23,9.5,0,0
+Yes,Male,Third,Master. Harold Theodor Johnson,4,11.1333,1,1
+No,Male,Third,Mr. Cerin Balkic,26,7.8958,0,0
+Yes,Female,First,Mrs. Richard Leonard (Sallie Monypeny) Beckwith,47,52.5542,1,1
+No,Male,First,Mr. Frans Olof Carlsson,33,5,0,0
+No,Male,Third,Mr. Victor Vander Cruyssen,47,9,0,0
+Yes,Female,Second,Mrs. Samuel (Hannah Wizosky) Abelson,28,24,1,0
+Yes,Female,Third,Miss. Adele Kiamie Najib,15,7.225,0,0
+No,Male,Third,Mr. Alfred Ossian Gustafsson,20,9.8458,0,0
+No,Male,Third,Mr. Nedelio Petroff,19,7.8958,0,0
+No,Male,Third,Mr. Kristo Laleff,23,7.8958,0,0
+Yes,Female,First,Mrs. Thomas Jr (Lily Alexenia Wilson) Potter,56,83.1583,0,1
+Yes,Female,Second,Mrs. William (Imanita Parrish Hall) Shelley,25,26,0,1
+No,Male,Third,Mr. Johann Markun,33,7.8958,0,0
+No,Female,Third,Miss. Gerda Ulrika Dahlberg,22,10.5167,0,0
+No,Male,Second,Mr. Frederick James Banfield,28,10.5,0,0
+No,Male,Third,Mr. Henry Jr Sutehall,25,7.05,0,0
+No,Female,Third,Mrs. William (Margaret Norton) Rice,39,29.125,0,5
+No,Male,Second,Rev. Juozas Montvila,27,13,0,0
+Yes,Female,First,Miss. Margaret Edith Graham,19,30,0,0
+No,Female,Third,Miss. Catherine Helen Johnston,7,23.45,1,2
+Yes,Male,First,Mr. Karl Howell Behr,26,30,0,0
+No,Male,Third,Mr. Patrick Dooley,32,7.75,0,0
