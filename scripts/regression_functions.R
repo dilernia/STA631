@@ -425,8 +425,8 @@ plot_3d <- function(data_3d, dupes = "mean", plot_type = c("static", "interactiv
 #' This function generates empirical logit plots for quantitative and 
 #' categorical predictors from a fitted logistic regression model. 
 #' Quantitative predictors are binned, and empirical log odds are plotted 
-#' as points. Categorical predictors are plotted as bar charts, with the 
-#' bars sorted by their height (the log odds).
+#' as points. Categorical predictors are also plotted as points, with the 
+#' categories sorted by their log odds.
 #'
 #' @param model_fit A fitted logistic regression model object (e.g., from \code{glm()}).
 #' @param n_bins An integer specifying the target number of bins for quantitative predictors. Default is 4.
@@ -523,7 +523,7 @@ empirical_logit_plot <- function(model_fit,
     if(!any(is.infinite(agg_data$log_odds))) {
       emp_plots[[predictor]] <- agg_data |>
         ggplot2::ggplot(ggplot2::aes(x = reorder(!!as.name(predictor), log_odds), y = log_odds)) +
-        ggplot2::geom_col() +
+        ggplot2::geom_point() +
         ggplot2::labs(x = predictor,
                       y = paste0("Log odds of ", response, " = ", ref_cat),
                       title = "Empirical Logit Plot") +
